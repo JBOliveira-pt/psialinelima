@@ -1,0 +1,63 @@
+@media (max-width: 1200px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);}
+}
+
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);}
+  .carousel-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1.3rem;
+    top: 40%;
+    display: none !important; }
+  .carousel-track {
+    display: block !important;   
+    transform: none !important;   
+    transition: none !important;  }
+  .post {
+    display: block !important;    
+    margin-bottom: 24px !important;}
+}
+
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;}
+  .post {
+    margin-bottom: 20px !important;}
+  header{
+  margin-right: 10px;
+  font-size:70%;}
+  .post:hover{
+    transform: scale(1);
+  }
+ .hamburger {
+    position: fixed;
+    top: 38px; 
+    left: 34px; 
+    width: 38px; 
+    height: 38px;
+    background: rgba(20, 20, 20, 0.305);
+    border-radius: 40%;
+    box-shadow: 0 4px 16px #0008;
+    z-index: 250;
+    transition: box-shadow 0.2s, background 0.2s;}
+  .hamburger span { 
+    width: px; 
+    height: px;}
+  .menu-overlay a { 
+    font-size: 1.9rem; }
+  .menu-overlay ul {
+    padding: 0 0 0 38px;}
+
+  .menu-social-icons {
+    flex-direction: column;
+    gap: 0px;
+    margin-left: 42px;
+    align-items: flex-start;
+  }
+  .menu-social-link {
+    align-items: flex-start;
+  }
+}

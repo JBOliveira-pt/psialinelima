@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsiv.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="filme-bg" id="filme-bg"></div>
+
+  <header>
+    <h1>P<small>S</small><small class="small-two"> i</small> Aline Lima</h1>
+  </header>
+
+<!-- HAMBURGER MENU -->
+<button class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-overlay">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+<nav id="menu-overlay" class="menu-overlay" aria-hidden="true">
+  <ul>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="contato.html">Contato</a></li>
+    <li><a href="pesquisa.html">Pesquisa</a></li>
+  </ul>
+
+ <div class="menu-social-icons">
+    <a
+      class="menu-social-link"
+      href="https://www.instagram.com/psi_alinelima_/"
+      target="_blank"
+      rel="noopener"
+    >
+      <img class="menu-social-icon-img" src="images/insta-img.png"/>
+      <span class="menu-social-label">meu Insta</span>
+    </a>
+    <a
+      class="menu-social-link"
+      href="https://www.threads.com/@psi_alinelima_"
+      target="_blank"
+      rel="noopener"
+    >
+      <img class="menu-social-icon-img" src="images/threads-img.png"/>
+      <span class="menu-social-label">meu Threads</span>
+    </a>
+  </div>
+
+</nav>
+
+<div class="carousel-container">
+  <button class="carousel-btn carousel-btn-left" id="prevPostsBtn">&#9664;</button>
+
+  <main id="posts">
+    <div class="carousel-track" id="carouselTrack"></div>
+  </main>
+
+  <button class="carousel-btn carousel-btn-right" id="nextPostsBtn">&#9654;</button>
+</div>
+
+  <footer>
+    <p>&copy; 2025 - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="posts.js"></script>
+  <script src="posts-init.js"></script>
+  <script src="script.js"></script>
+  <script src="backgroud.js"></script>
+
+</body>
+</html>

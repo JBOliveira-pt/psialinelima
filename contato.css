@@ -1,0 +1,121 @@
+.main-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-titulo{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing:0.04cm;
+    margin-left: 10%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color:rgba(252, 252, 252, 0.784);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.492), 0 0.5px 1px rgba(0, 0, 0, 0.382);
+    z-index: 1;
+    position: relative;
+}
+
+.contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 50px auto; 
+    height: 500px; 
+    width: 80%;
+    color:rgba(252, 252, 252, 0.784);
+    background: rgba(0, 0, 0, 0.775);
+    background-blend-mode: lighten;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 20px rgba(7, 10, 10, 0.911);
+    gap: 100px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.contato img{
+    max-height: 480px;
+    height: 100%;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.contato-conteudo h3{
+    font-size: 25px;
+    letter-spacing:0.02cm;
+    padding-bottom: 8px;
+    min-width: 480px;
+}
+
+.contato-conteudo p{
+    letter-spacing:0.02cm;
+    text-align: left;
+    line-height: 150%;
+    padding: 4px;
+}
+
+.email-link {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: transform 0.2s, color 0.2s;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.email-link:hover {
+  transform: scale(1.1);
+  color: #ffffff; 
+}
+
+
+@media (max-width: 600px){
+
+.contato-titulo {
+    font-size: 32px;
+    margin: 0 0 20px 15px;
+    text-align: left;
+    margin-top: 0px;
+  }
+  .contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    width: 96vw;
+    min-width: 0;
+    max-width: 80vw;
+    gap: 25px;
+    padding: 18px 8px 18px 8px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+  }
+  .contato img {
+    max-width: 240px;
+    max-height: 350px;
+    width: 100%;
+    box-shadow: none;
+  }
+  .contato-conteudo {
+    width: 100%;
+    padding: 0 6px 0 6px;
+  }
+  .contato-conteudo h3 {
+    font-size: 18px;
+    letter-spacing: 0.01cm;
+    padding-bottom: 4px;
+    margin-top: 6px;
+  }
+  .contato-conteudo p {
+    font-size: 15px;
+    letter-spacing: 0.01cm;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 3px 2px;
+  }
+
+}
