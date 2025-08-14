@@ -4,7 +4,7 @@
   box-sizing: border-box;}
 @font-face {
   font-family: 'MinhaFonte';
-  src: url('.src/fonts/Creattion.ttf') format('truetype');
+  src: url('../fonts/Creattion.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;}
 header, main, footer {
@@ -488,4 +488,5 @@ footer {
   border-color: #333;
   outline: 2px solid #b2faff;
 }
+
 
