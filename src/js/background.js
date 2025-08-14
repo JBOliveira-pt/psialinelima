@@ -1,7 +1,7 @@
 const colunas = 21;
     const linhas = 8;
     const quadroW = 120, quadroH = 150;
-    const imagemURL = "src/images/background-img.png";
+    const imagemURL = "src/images/backgroud-img.png";
     const filmeBg = document.getElementById('filme-bg');
     const cols = [];
     let quadros = [];
@@ -37,5 +37,6 @@ const colunas = 21;
       requestAnimationFrame(animar);
     }
     animar();
+
 
 
