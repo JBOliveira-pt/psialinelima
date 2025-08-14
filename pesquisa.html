@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pesquisa</title>
-  <link rel="stylesheet" href="./src/css/style.css">
-  <link rel="stylesheet" href="./src/css/responsiv.css">
-  <link rel="stylesheet" href="./src/css/pesquisa.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/responsiv.css">
+  <link rel="stylesheet" href="src/css/pesquisa.css">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -18,71 +18,71 @@
     <h1>P<small>S</small><small class="small-two"> i</small> Aline Lima</h1>
   </header>
 
-<main class="main-pesquisa">
-  <section class="pesquisa" aria-label="pesquisa">
-    <section class="pesquisa-conteudo" aria-label="pesquisa-conteudo">
-      <p>Faça aqui sua pesquisa em meus posts!</p> 
-      <div class="pesquisa-bar-container">
-        <select id="pesquisaTipo">
-          <option value="titulo">Título</option>
-          <option value="data">Data</option>
-          <option value="hashtag">#Hashtag</option>
-        </select>
-        <select id="pesquisaOpcoes"></select>
-        <button type="button" id="limpaFiltroBtn">Limpar</button>
-      </div>
-      <div class="carousel-container" style="margin-top: 30px;">
-        <button class="carousel-btn carousel-btn-left" id="prevPesquisaBtn">&#9664;</button>
-        <section id="posts-lista">
-          <div class="carousel-track" id="posts-container"></div>
-        </section>
-        <button class="carousel-btn carousel-btn-right" id="nextPesquisaBtn">&#9654;</button>
-      </div>
+  <main class="main-pesquisa">
+    <section class="pesquisa" aria-label="pesquisa">
+      <section class="pesquisa-conteudo" aria-label="pesquisa-conteudo">
+        <p>Faça aqui sua pesquisa em meus posts!</p> 
+        <div class="pesquisa-bar-container">
+          <select id="pesquisaTipo">
+            <option value="titulo">Título</option>
+            <option value="data">Data</option>
+            <option value="hashtag">#Hashtag</option>
+          </select>
+          <select id="pesquisaOpcoes"></select>
+          <button type="button" id="limpaFiltroBtn">Limpar</button>
+        </div>
+        <div class="carousel-container" style="margin-top: 30px;">
+          <button class="carousel-btn carousel-btn-left" id="prevPesquisaBtn">&#9664;</button>
+          <section id="posts-lista">
+            <div class="carousel-track" id="posts-container"></div>
+          </section>
+          <button class="carousel-btn carousel-btn-right" id="nextPesquisaBtn">&#9654;</button>
+        </div>
+      </section>
     </section>
-  </section>
-</main>
+  </main>
 
-<button class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-overlay">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
-<nav id="menu-overlay" class="menu-overlay" aria-hidden="true">
-  <ul>
-    <li><a href="./index.html">Home</a></li>
-    <li><a href="./src/sobre.html">Sobre</a></li>
-    <li><a href="./src/contato.html">Contato</a></li>
-  </ul>
-   <div class="menu-social-icons">
-    <a
-      class="menu-social-link"
-      href="https://www.instagram.com/psi_alinelima_/"
-      target="_blank"
-      rel="noopener"
-    >
-      <img class="menu-social-icon-img" src="./src/images/insta-img.png"/>
-      <span class="menu-social-label">meu Insta</span>
-    </a>
-    <a
-      class="menu-social-link"
-      href="https://www.threads.com/@psi_alinelima_"
-      target="_blank"
-      rel="noopener"
-    >
-      <img class="menu-social-icon-img" src="./src/images/threads-img.png"/>
-      <span class="menu-social-label">meu Threads</span>
-    </a>
-  </div>
-</nav>
+  <button class="hamburger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-overlay">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <nav id="menu-overlay" class="menu-overlay" aria-hidden="true">
+    <ul>
+      <li><a href="/psialinelima/">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <div class="menu-social-icons">
+      <a
+        class="menu-social-link"
+        href="https://www.instagram.com/psi_alinelima_/"
+        target="_blank"
+        rel="noopener"
+      >
+        <img class="menu-social-icon-img" src="src/images/insta-img.png" alt="Instagram"/>
+        <span class="menu-social-label">meu Insta</span>
+      </a>
+      <a
+        class="menu-social-link"
+        href="https://www.threads.com/@psi_alinelima_"
+        target="_blank"
+        rel="noopener"
+      >
+        <img class="menu-social-icon-img" src="src/images/threads-img.png" alt="Threads"/>
+        <span class="menu-social-label">meu Threads</span>
+      </a>
+    </div>
+  </nav>
 
   <footer>
     <p>&copy; 2025 - Todos os direitos reservados</p>
   </footer>
 
-  <script src="./src/js/script.js"></script>
-  <script src="./src/js/backgroud.js"></script>
-  <script src="./src/js/posts.js"></script>
-  <script src="./src/js/pesquisa.js"></script>
+  <script src="src/js/script.js"></script>
+  <script src="src/js/background.js"></script>
+  <script src="src/js/posts.js"></script>
+  <script src="src/js/pesquisa.js"></script>
   <script>
     fetch('posts.json')
       .then(res => res.json())
@@ -92,6 +92,3 @@
   </script>
 </body>
 </html>
-
-
-
