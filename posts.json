@@ -2,7 +2,7 @@
   {
     "titulo": "Raiva e Justiça",
     "data": "13/08/2025",
-    "imagem": "images/RaivaJustica-img.png",
+    "imagem": "src/images/RaivaJustica-img.png",
     "video": "",
     "conteudo": [
       "Quando Daudt afirma que a raiva é a “mãe da justiça”, ele reforça a ideia de que, sem esse afeto, não há motivação para a transformação.",
@@ -30,7 +30,7 @@
   {
   "titulo": "A Lei Perversa",
   "data": "11/08/2025",
-  "imagem": "images/OIluminado-img.jpg",
+  "imagem": "src/images/OIluminado-img.jpg",
   "video": "",
   "conteudo": [
     "Jack em “O Iluminado”, Dr. Ledgard em “A Pele que Habito” e Tom em “Dogville” são variações de um mesmo arquétipo: o pai que, em vez de servir como mediador entre o sujeito e a lei, se torna o agente direto de seu gozo destrutivo.",
@@ -58,7 +58,7 @@
 {
   "titulo": "Desamparo em 28 Years Later",
   "data": "06/08/2025",
-  "imagem": "images/28YearsLater-img.png",
+  "imagem": "src/images/28YearsLater-img.png",
   "video": "",
   "conteudo": [
     "Na psicanálise, especialmente em Freud e Lacan, a figura de Deus muitas vezes se confunde com a imagem do Pai simbólico, aquele que deveria garantir ordem, proteção e sentido.",
@@ -91,7 +91,7 @@
   "titulo": "Lois e o herói nu",
   "data": "06/08/2025",
   "imagem": "",
-  "video": "images/LoiseSuperHomem-vid.mp4",
+  "video": "src/images/LoiseSuperHomem-vid.mp4",
   "conteudo": [
     "Nas histórias clássicas do Superman, Lois Lane encarna o arquétipo da “donzela em perigo”: uma figura passiva, sempre à mercê do herói que a salvará.",
     "Mas neste filme, a dinâmica se subverte. Lois não é quem precisa de resgate; é ela quem coloca o Homem de Aço em perigo, ainda que simbólico.",
@@ -116,7 +116,7 @@
 {
   "titulo": "Do “mau cheiro” ao ralo coletivo",
   "data": "05/08/2025",
-  "imagem": "images/OCheiroDoRalo-img.png",
+  "imagem": "src/images/OCheiroDoRalo-img.png",
   "video": "",
   "conteudo": [
     "Hoje, depois de ver o post do @nozy.ca, parei para pensar nos filmes que, a princípio, foram fracassos de público e crítica, mas que o tempo consagrou como cult.",
@@ -151,7 +151,7 @@
 {
   "titulo": "Ritos contra a barbárie",
   "data": "04/08/2025",
-  "imagem": "images/Dr.Kelson-img.png",
+  "imagem": "src/images/Dr.Kelson-img.png",
   "video": "",
   "conteudo": [
     "Enquanto assistia a “Extermínio: A Evolução”, fiquei profundamente impactada pela figura do Dr. Kelson.",
@@ -188,7 +188,7 @@
 {
   "titulo": "Possíveis destinos da culpa",
   "data": "31/07/2025",
-  "imagem": "images/Round6-img.png",
+  "imagem": "src/images/Round6-img.png",
   "video": "",
   "conteudo": [
     "A culpa e seus possíveis destinos foi o tema que mais me chamou a atenção na última temporada de “Round 6”.",
@@ -219,7 +219,7 @@
 {
   "titulo": "Ozzy e a eternidade que fica",
   "data": "23/07/2025",
-  "imagem": "images/Ozzy-img.png",
+  "imagem": "src/images/Ozzy-img.png",
   "video": "",
   "conteudo": [
     "Por que a morte de alguém que nunca conhecemos pessoalmente pode doer tanto?",
@@ -251,7 +251,7 @@
   "titulo": "A cicatriz da infância",
   "data": "18/07/2025",
   "imagem": "",
-  "video": "images/ToyStory-vid.mp4",
+  "video": "src/images/ToyStory-vid.mp4",
   "conteudo": [
     "A saída da infância é dolorosa porque significa romper com um estado de completude ilusória, onde a criança acredita ser o centro do próprio universo.",
     "Entrar no mundo adulto exige submeter-se ao “Princípio da Realidade”, um território de frustrações, limites e da descoberta da falta que nos constitui.",
@@ -284,7 +284,7 @@
 {
   "titulo": "Vergonha sob os holofotes",
   "data": "16/07/2025",
-  "imagem": "images/TheStudio-img.png",
+  "imagem": "src/images/TheStudio-img.png",
   "video": "",
   "conteudo": [
     "Matt Remick vive em um cabo de guerra constante. De um lado, a ascensão meteórica e projetos multimilionários. Do outro, uma voz persistente: “Você não é bom o suficiente, e em breve eles vão perceber.”",
@@ -321,7 +321,7 @@
   {
     "titulo": "O sorriso que resiste",
     "data": "14/02/2025",
-    "imagem": "images/AindaEstouAqui-img.jpg",
+    "imagem": "src/images/AindaEstouAqui-img.jpg",
     "video": "",
     "conteudo": [
       "No contexto psicanalítico, o sorriso pode ser compreendido uma manifestação do Real que irrompe no Simbólico.",
@@ -349,7 +349,7 @@
   {
   "titulo": "Merd@s acontecem",
   "data": "09/07/2025",
-  "imagem": "images/ShitHappens-img.jpg",
+  "imagem": "src/images/ShitHappens-img.jpg",
   "video": "",
   "conteudo": [
     "Quando ouço a frase “Merdas acontecem”, a primeira coisa que me vem à mente é o filme “Forrest Gump”.",
@@ -385,7 +385,7 @@
   "titulo": "Prazer como ato de rebeldia",
   "data": "08/07/2025",
   "imagem": "",
-  "video": "images/TheSinners-vid.mp4",
+  "video": "src/images/TheSinners-vid.mp4",
   "conteudo": [
     "O prazer nunca foi apenas prazer. Foi chamado de pecado, desvio, perversão. Mas por quê? Porque corpos que sentem sem culpa são corpos impossíveis de controlar.",
     "“Pecadores” (2025) desmascara a mentira sagrada: a religião e o poder condenaram o prazer para simplesmente fabricar obedientes.",
@@ -416,7 +416,7 @@
 {
   "titulo": "Entre o vulcão e o sofá",
   "data": "04/07/2025",
-  "imagem": "images/Wild-Amelie-img.png",
+  "imagem": "src/images/Wild-Amelie-img.png",
   "video": "",
   "conteudo": [
     "Sinceramente, eu acho que a gente faz muita interpretação em cima de pouca coisa na internet.",
@@ -454,7 +454,7 @@
     "titulo": "O peso que não é seu",
     "data": "03/07/2025",
     "imagem": "",
-    "video": "images/Carmy-vid.mp4",
+    "video": "src/images/Carmy-vid.mp4",
     "conteudo": [
       "Muitas pessoas que cresceram com pais dependentes de álcool/drogas/outros vícios ou que perderam alguém para o su#cydi@ carregam um peso que não lhes pertence: a culpa.",
       "No fundo, sempre acreditam que poderiam ter feito algo para evitar a tragédia.",
@@ -487,7 +487,7 @@
   {
     "titulo": "Quando amar é o que Importa",
     "data": "28/06/2025",
-    "imagem": "images/AmarImporta-img.png",
+    "imagem": "src/images/AmarImporta-img.png",
     "video": "",
     "conteudo": [
       "Ontem, enquanto acompanhava mais um episódio de “The Bear”, fui profundamente tocada pela cena em que Carmy liga para a irmã pedindo desculpas por ainda não ter conhecido a sobrinha.",
@@ -517,7 +517,7 @@
     "titulo": "O medo do palco vazio",
     "data": "23/06/2025",
     "imagem": "",
-    "video": "images/PalcoVazio-vid.mp4",
+    "video": "src/images/PalcoVazio-vid.mp4",
     "conteudo": [
       "O homem patriarcal é aquele que, diante do abismo de sua própria fragilidade, ergue fortalezas de violência e controle.",
       "Seu ódio ao feminino não é senão o pânico de reconhecer que a “masculinidade” é uma ficção frágil, sempre à beira do desmoronamento.",
@@ -549,7 +549,7 @@
     "titulo": "Núcleo não neurótico",
     "data": "18/06/2025",
     "imagem": "",
-    "video": "images/NucleoNaoNeurotico-vid.mp4",
+    "video": "src/images/NucleoNaoNeurotico-vid.mp4",
     "conteudo": [
       "A cena do ataque de fúria de Carmy no freezer, onde ele chuta, grita e se debate contra a porta, não é apenas um sintoma neurótico clássico, mas também o que Marion Minerbo chama de “núcleo não neurótico”: uma dimensão do psiquismo onde o sujeito não consegue sequer estruturar um conflito simbólico.",
       "Lacan diria que essa fúria é um “significante sem significado”, um afeto que “falha” em se ligar a uma cadeia simbólica, o Real que transborda sem conseguir encontrar uma representação.",
@@ -578,7 +578,7 @@
     "titulo": "Quando a dor é mensagem",
     "data": "04/06/2025",
     "imagem": "",
-    "video": "images/DorMensagem-vid.mp4",
+    "video": "src/images/DorMensagem-vid.mp4",
     "conteudo": [
       "Se o único modo de ser reconhecido é através da dor, a doença se transforma em uma mensagem cifrada, num apelo que não encontrou outras vias de expressão.",
       "Nesse cenário, o sujeito pode, inconscientemente, resistir à melhora, porque, em seu mundo psíquico, isso significaria um apagamento simbólico.",
@@ -608,7 +608,7 @@
   {
     "titulo": "Amor que não se cura",
     "data": "20/05/2025",
-    "imagem": "images/AmorNaoCura-img.png",
+    "imagem": "src/images/AmorNaoCura-img.png",
     "video": "",
     "conteudo": [
       "“Espero que, se você tiver um filho, seja melhor que eu.”",
@@ -633,7 +633,7 @@
   {
     "titulo": "Luto pelo mundo que se foi",
     "data": "14/05/2025",
-    "imagem": "images/LutoMundoFoi-img.png",
+    "imagem": "src/images/LutoMundoFoi-img.png",
     "video": "",
     "conteudo": [
       "Freud ensinou que o luto é o trabalho psíquico necessário para se desprender de um objeto perdido.",
@@ -660,7 +660,7 @@
   {
     "titulo": "Ódio retroativo",
     "data": "07/02/2025",
-    "imagem": "images/OdioRetroativo-img.png",
+    "imagem": "src/images/OdioRetroativo-img.png",
     "video": "",
     "conteudo": [
       "Na teoria psicanalítica, o recalque é um mecanismo de defesa em que ideias, sentimentos ou memórias dolorosas ou ameaçadoras são excluídos da consciência e enviados para o inconsciente.",
@@ -686,7 +686,7 @@
     "titulo": "Ditadura da felicidade",
     "data": "25/10/2023",
     "imagem": "",
-    "video": "images/teste-vid.mp4",
+    "video": "src/images/teste-vid.mp4",
     "conteudo": [
       "Como é difícil viver numa sociedade que faz mil e uma campanhas sobre depressão, suicídio, ansiedade, mas não consegue suportar nenhum pequeno indício de tristeza.",
       "Parabéns à Sandy pela coragem de tentar expor em seu discurso todas as perdas que existem em qualquer processo de amadurecimento.",
@@ -706,7 +706,7 @@
   {
     "titulo": "A falta além da ausência",
     "data": "22/03/2023",
-    "imagem": "images/AntesDaMeiaNoite-img.jpg",
+    "imagem": "src/images/AntesDaMeiaNoite-img.jpg",
     "video": "",
     "conteudo": [
       "Há quem espere que um novo relacionamento funcione como uma borracha capaz de apagar todas as suas angústias e assim se empenhe desesperadamente em achar alguém para ocupar um certo lugar.",
@@ -733,7 +733,7 @@
   {
     "titulo": "Fuga e repetição",
     "data": "06/03/2023",
-    "imagem": "images/GinnyAndGeorgia-img.png",
+    "imagem": "src/images/GinnyAndGeorgia-img.png",
     "video": "",
     "conteudo": [
       "Para uma criança, infelizmente, não existe nenhuma outra opção para se separar de pais abusivos que não a fuga.",
@@ -766,7 +766,7 @@
   {
     "titulo": "Para Theo ❤️",
     "data": "19/01/2023",
-    "imagem": "images/Recomeco-img.png",
+    "imagem": "src/images/Recomeco-img.png",
     "video": "",
     "conteudo": [
       "Ignacio Matte-Blanco falava do amor como um “deicídio” (matar Deus) sem matar Deus. Como Enrique Iglesias numa famosa canção que compara o amor a uma experiência religiosa, com “descobrir o infinito”, o psiquiatra e psicanalista entendia essa sensação como uma espécie de êxtase transcendental, um estado tão poderoso que poderia nos fazer sentir como deuses.",
@@ -791,7 +791,7 @@
   {
     "titulo": "Entre o desejo e a culpa",
     "data": "29/12/2022",
-    "imagem": "images/Fleabag-img.png",
+    "imagem": "src/images/Fleabag-img.png",
     "video": "",
     "conteudo": [
       "Quando há um hiato muito grande entre o que acreditamos que deveríamos querer e o que realmente queremos, qualquer escolha que fizermos acabará fatalmente ou na culpa ou no arrependimento.",
@@ -816,7 +816,7 @@
   {
     "titulo": "Êxito e culpa",
     "data": "07/11/2022",
-    "imagem": "images/TheBear-img.png",
+    "imagem": "src/images/TheBear-img.png",
     "video": "",
     "conteudo": [
       "Freud, em seus escritos, falou mais de uma vez sobre a angústia que surge diante do êxito.",
@@ -847,3 +847,4 @@
     ]
   }
 ]
+
