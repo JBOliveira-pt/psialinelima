@@ -1,9 +1,10 @@
 [
   {
-    "titulo": "Raiva e Justiça",
+    "titulo": "Raiva e justiça",
     "data": "13/08/2025",
     "imagem": "src/images/RaivaJustica-img.png",
     "video": "",
+    "poster": "",
     "conteudo": [
       "Quando Daudt afirma que a raiva é a “mãe da justiça”, ele reforça a ideia de que, sem esse afeto, não há motivação para a transformação.",
       "A sociedade, porém, recebe a raiva de formas diferentes conforme o gênero de quem a expressa: homens furiosos são celebrados como revolucionários, enquanto mulheres furiosas são reduzidas a “dramáticas” ou “amargas”.",
@@ -15,6 +16,7 @@
       "Hoje, depois de milhões de visualizações, matéria no Jornal Nacional e bloqueio de Hytalo Santos nas redes sociais, eu me pergunto: que tipo de mundo construiríamos se, finalmente, déssemos à voz das mulheres a atenção e a validade que merece?"
     ],
     "hashtags": [
+      "daudt",
       "raiva",
       "justica",
       "furiadasmulheres",
@@ -28,10 +30,11 @@
     ]
   }, 
   {
-  "titulo": "A Lei Perversa",
+  "titulo": "A lei perversa",
   "data": "11/08/2025",
   "imagem": "src/images/OIluminado-img.jpg",
   "video": "",
+  "poster": "",
   "conteudo": [
     "Jack em “O Iluminado”, Dr. Ledgard em “A Pele que Habito” e Tom em “Dogville” são variações de um mesmo arquétipo: o pai que, em vez de servir como mediador entre o sujeito e a lei, se torna o agente direto de seu gozo destrutivo.",
     "Em “O Iluminado”, Jack não proíbe, ele se identifica com a própria violência que deveria regular. Sua “missão” não é manter a ordem, mas impor o caos como uma paródia monstruosa da autoridade paterna. Assim, ele se transforma, pouco a pouco, no carrasco da família que deveria salvar.",
@@ -60,6 +63,7 @@
   "data": "06/08/2025",
   "imagem": "src/images/28YearsLater-img.png",
   "video": "",
+  "poster": "",
   "conteudo": [
     "Na psicanálise, especialmente em Freud e Lacan, a figura de Deus muitas vezes se confunde com a imagem do Pai simbólico, aquele que deveria garantir ordem, proteção e sentido.",
     "Quando esse Pai real ou divino falha, surge uma crise profunda.",
@@ -77,7 +81,6 @@
   "hashtags": [
     "28yearslater",
     "exterminioaevolucao",
-    "exterminio",
     "cinema",
     "hollywood",
     "terror",
@@ -92,6 +95,7 @@
   "data": "06/08/2025",
   "imagem": "",
   "video": "src/images/LoiseSuperHomem-vid.mp4",
+  "poster": "src/images/LoiseSuperHomem-img.png",
   "conteudo": [
     "Nas histórias clássicas do Superman, Lois Lane encarna o arquétipo da “donzela em perigo”: uma figura passiva, sempre à mercê do herói que a salvará.",
     "Mas neste filme, a dinâmica se subverte. Lois não é quem precisa de resgate; é ela quem coloca o Homem de Aço em perigo, ainda que simbólico.",
@@ -102,7 +106,6 @@
   ],
   "hashtags": [
     "superman",
-    "super-homen",
     "loislane",
     "christopherreeve",
     "dccomics",
@@ -118,6 +121,7 @@
   "data": "05/08/2025",
   "imagem": "src/images/OCheiroDoRalo-img.png",
   "video": "",
+  "poster": "",
   "conteudo": [
     "Hoje, depois de ver o post do @nozy.ca, parei para pensar nos filmes que, a princípio, foram fracassos de público e crítica, mas que o tempo consagrou como cult.",
     "Essas obras “incompreendidas” me fizeram lembrar que, em certas fases da vida, a gente não tem a experiência ou a maturidade necessária para alcançar certas camadas delas.",
@@ -153,6 +157,7 @@
   "data": "04/08/2025",
   "imagem": "src/images/Dr.Kelson-img.png",
   "video": "",
+  "poster": "",
   "conteudo": [
     "Enquanto assistia a “Extermínio: A Evolução”, fiquei profundamente impactada pela figura do Dr. Kelson.",
     "Em meio ao caos e à violência que desumanizavam todos ao seu redor, ele mantinha um altar para os mortos, honrando-os com respeito e, por isso, era chamado de “louco” quando seu suposto delírio era, na realidade, um ato de resistência.",
@@ -190,6 +195,7 @@
   "data": "31/07/2025",
   "imagem": "src/images/Round6-img.png",
   "video": "",
+  "poster": "",
   "conteudo": [
     "A culpa e seus possíveis destinos foi o tema que mais me chamou a atenção na última temporada de “Round 6”.",
     "Mesmo com a série perdendo parte do impacto da estreia, foi interessante acompanhar os mecanismos que os personagens, principalmente aqueles que cometeram atos cruéis com intenções puramente egoístas, usam para lidar com o horror de suas ações.",
@@ -221,6 +227,7 @@
   "data": "23/07/2025",
   "imagem": "src/images/Ozzy-img.png",
   "video": "",
+  "poster": "",
   "conteudo": [
     "Por que a morte de alguém que nunca conhecemos pessoalmente pode doer tanto?",
     "A resposta talvez esteja no fato de que esses artistas nunca foram apenas vozes ou rostos; eles foram narradores invisíveis de nossas vidas.",
@@ -234,7 +241,6 @@
     "E enquanto ouvi-lo e lembrar do meu pai em cada nota, em cada grito, ele estará aqui. Sempre."
   ],
   "hashtags": [
-    "ozzyosbourne",
     "ozzy",
     "blacksabbath",
     "ironman",
@@ -252,6 +258,7 @@
   "data": "18/07/2025",
   "imagem": "",
   "video": "src/images/ToyStory-vid.mp4",
+  "poster": "src/images/ToyStory-img.png",
   "conteudo": [
     "A saída da infância é dolorosa porque significa romper com um estado de completude ilusória, onde a criança acredita ser o centro do próprio universo.",
     "Entrar no mundo adulto exige submeter-se ao “Princípio da Realidade”, um território de frustrações, limites e da descoberta da falta que nos constitui.",
@@ -286,6 +293,7 @@
   "data": "16/07/2025",
   "imagem": "src/images/TheStudio-img.png",
   "video": "",
+  "poster": "",
   "conteudo": [
     "Matt Remick vive em um cabo de guerra constante. De um lado, a ascensão meteórica e projetos multimilionários. Do outro, uma voz persistente: “Você não é bom o suficiente, e em breve eles vão perceber.”",
     "Diferente de Carmy, de “The Bear”, cujo sofrimento nasce da culpa clássica, um remorso freudiano ligado à transgressão de um código interno, Matt é dilacerado por algo mais atual: a vergonha.",
@@ -307,8 +315,6 @@
     "culpa",
     "desejo",
     "posfreudiano",
-    "thebear",
-    "ourso",
     "carmy",
     "hollywood",
     "entretenimento",
@@ -323,6 +329,7 @@
     "data": "14/02/2025",
     "imagem": "src/images/AindaEstouAqui-img.jpg",
     "video": "",
+    "poster": "",
     "conteudo": [
       "No contexto psicanalítico, o sorriso pode ser compreendido uma manifestação do Real que irrompe no Simbólico.",
       "O Real, na teoria lacaniana, é aquilo que escapa à simbolização, que resiste ao controle e à dominação.",
@@ -351,6 +358,7 @@
   "data": "09/07/2025",
   "imagem": "src/images/ShitHappens-img.jpg",
   "video": "",
+  "poster": "",
   "conteudo": [
     "Quando ouço a frase “Merdas acontecem”, a primeira coisa que me vem à mente é o filme “Forrest Gump”.",
     "Lembro-me de tê-lo visto no cinema na época e ter me encantado com a forma simples, mas profunda, como o personagem enfrentava as adversidades da vida.",
@@ -386,6 +394,7 @@
   "data": "08/07/2025",
   "imagem": "",
   "video": "src/images/TheSinners-vid.mp4",
+  "poster": "src/images/TheSinners-img.png",
   "conteudo": [
     "O prazer nunca foi apenas prazer. Foi chamado de pecado, desvio, perversão. Mas por quê? Porque corpos que sentem sem culpa são corpos impossíveis de controlar.",
     "“Pecadores” (2025) desmascara a mentira sagrada: a religião e o poder condenaram o prazer para simplesmente fabricar obedientes.",
@@ -418,6 +427,7 @@
   "data": "04/07/2025",
   "imagem": "src/images/Wild-Amelie-img.png",
   "video": "",
+  "poster": "",
   "conteudo": [
     "Sinceramente, eu acho que a gente faz muita interpretação em cima de pouca coisa na internet.",
     "Acho bem preocupante quando alguém se pergunta o que outro foi fazer num vulcão, mas, por outro lado, também acho muito equivocado e simplista rebater com “isso sim é viver de verdade”.",
@@ -447,7 +457,8 @@
     "pertencimento",
     "wild",
     "amelie",
-    "cinema"
+    "cinema",
+     "cult"
   ]
 },
 {
@@ -455,6 +466,7 @@
     "data": "03/07/2025",
     "imagem": "",
     "video": "src/images/Carmy-vid.mp4",
+    "poster": "src/images/Carmy-img.png",
     "conteudo": [
       "Muitas pessoas que cresceram com pais dependentes de álcool/drogas/outros vícios ou que perderam alguém para o su#cydi@ carregam um peso que não lhes pertence: a culpa.",
       "No fundo, sempre acreditam que poderiam ter feito algo para evitar a tragédia.",
@@ -489,6 +501,7 @@
     "data": "28/06/2025",
     "imagem": "src/images/AmarImporta-img.png",
     "video": "",
+    "poster": "",
     "conteudo": [
       "Ontem, enquanto acompanhava mais um episódio de “The Bear”, fui profundamente tocada pela cena em que Carmy liga para a irmã pedindo desculpas por ainda não ter conhecido a sobrinha.",
       "No mesma ligação, Sugar deixa escapar a memória da partida do irmão para Nova York: aquele misto de tristeza e alegria ao ver nele, pela primeira vez, o brilho de quem finalmente encontrara seu lugar no mundo.",
@@ -518,6 +531,7 @@
     "data": "23/06/2025",
     "imagem": "",
     "video": "src/images/PalcoVazio-vid.mp4",
+    "poster": "src/images/PalcoVazio-img.png",
     "conteudo": [
       "O homem patriarcal é aquele que, diante do abismo de sua própria fragilidade, ergue fortalezas de violência e controle.",
       "Seu ódio ao feminino não é senão o pânico de reconhecer que a “masculinidade” é uma ficção frágil, sempre à beira do desmoronamento.",
@@ -550,6 +564,7 @@
     "data": "18/06/2025",
     "imagem": "",
     "video": "src/images/NucleoNaoNeurotico-vid.mp4",
+    "poster": "src/images/NucleoNaoNeurotico-img.png",
     "conteudo": [
       "A cena do ataque de fúria de Carmy no freezer, onde ele chuta, grita e se debate contra a porta, não é apenas um sintoma neurótico clássico, mas também o que Marion Minerbo chama de “núcleo não neurótico”: uma dimensão do psiquismo onde o sujeito não consegue sequer estruturar um conflito simbólico.",
       "Lacan diria que essa fúria é um “significante sem significado”, um afeto que “falha” em se ligar a uma cadeia simbólica, o Real que transborda sem conseguir encontrar uma representação.",
@@ -579,6 +594,7 @@
     "data": "04/06/2025",
     "imagem": "",
     "video": "src/images/DorMensagem-vid.mp4",
+    "poster": "src/images/DorMensagem-img.png",
     "conteudo": [
       "Se o único modo de ser reconhecido é através da dor, a doença se transforma em uma mensagem cifrada, num apelo que não encontrou outras vias de expressão.",
       "Nesse cenário, o sujeito pode, inconscientemente, resistir à melhora, porque, em seu mundo psíquico, isso significaria um apagamento simbólico.",
@@ -589,12 +605,11 @@
       "Num mundo onde o narcisismo moderno tem transformado a dor em performance, enquanto confundirmos engajamento com cuidado, o corpo continuará inventando modos cada vez mais cruéis de provar que existe."
     ],
     "hashtags": [
-      "doentedemimmesma",
       "sykpike",
       "cinema",
+      "cult",
       "doenca",
       "visibilidade",
-      "psicanalise",
       "dor",
       "sintoma",
       "cura",
@@ -610,6 +625,7 @@
     "data": "20/05/2025",
     "imagem": "src/images/AmorNaoCura-img.png",
     "video": "",
+    "poster": "",
     "conteudo": [
       "“Espero que, se você tiver um filho, seja melhor que eu.”",
       "Nessa frase, Joel não está apenas expressando um desejo. Ele revive, a partir de outro lugar, uma cena traumática de sua própria história, revelando sua dolorosa identificação com a figura paterna.",
@@ -635,6 +651,7 @@
     "data": "14/05/2025",
     "imagem": "src/images/LutoMundoFoi-img.png",
     "video": "",
+    "poster": "",
     "conteudo": [
       "Freud ensinou que o luto é o trabalho psíquico necessário para se desprender de um objeto perdido.",
       "Mas e quando o que se perde não é um objeto específico, mas um modo de existir?",
@@ -658,10 +675,42 @@
     ]
   },
   {
+    "titulo": "O amor que permite a falta",
+    "data": "11/05/2025",
+    "imagem": "",
+    "video": "src/images/AmorFalta-vid.mp4",
+    "poster": "src/images/AmorFalta-img.png",
+    "conteudo": [
+      "Amar, verdadeiramente, não é ocupar todos os espaços, nem se fazer indispensável. É, paradoxalmente, sustentar a falta. Aquele vazio que permite ao outro existir por si mesmo.",
+      "A mãe que compreende isso não insiste em ser a figura onipotente, a que tudo provê e tudo controla.",
+      "Pelo contrário, ela se permite “morrer” simbolicamente como centro absoluto do mundo da filha e, ao fazer isso, renasce também como sujeito: uma mulher, que não existe apenas em função da maternidade.",
+      "Amar, portanto, é resistir à tentação de querer ser tudo para alguém. É permitir que o outro sinta a ausência, para que dela nasça a saudade e a vontade de estar perto.",
+      "E nesse gesto de não ocupar todos os lugares, algo extraordinário acontece: o amor deixa de ser uma prisão e se torna uma ponte entre dois sujeitos que escolhem-se não por laços de sangue ou necessidade, mas por desejo.",
+      "(O amor que sufoca não é amor, é medo disfarçado de cuidado)"
+    ],
+    "hashtags": [
+      "mammamia",
+      "cinema",
+      "hollywood",
+      "merylstreep",
+      "amandaseyfried",
+      "amor",
+      "falta",
+      "maternidade",
+      "vinculo",
+      "desejo",
+      "autonomia",
+      "saudade",
+      "relacoes",
+      "cuidado"
+    ]
+  },
+  {
     "titulo": "Ódio retroativo",
     "data": "07/02/2025",
     "imagem": "src/images/OdioRetroativo-img.png",
     "video": "",
+    "poster": "",
     "conteudo": [
       "Na teoria psicanalítica, o recalque é um mecanismo de defesa em que ideias, sentimentos ou memórias dolorosas ou ameaçadoras são excluídos da consciência e enviados para o inconsciente.",
       "No entanto, o que é reprimido não desaparece, mas tende a retornar de forma distorcida, seja por meio de sintomas, sonhos, atos falhos ou chistes.",
@@ -687,6 +736,7 @@
     "data": "25/10/2023",
     "imagem": "",
     "video": "src/images/teste-vid.mp4",
+    "poster": "src/images/teste-img.png",
     "conteudo": [
       "Como é difícil viver numa sociedade que faz mil e uma campanhas sobre depressão, suicídio, ansiedade, mas não consegue suportar nenhum pequeno indício de tristeza.",
       "Parabéns à Sandy pela coragem de tentar expor em seu discurso todas as perdas que existem em qualquer processo de amadurecimento.",
@@ -708,6 +758,7 @@
     "data": "22/03/2023",
     "imagem": "src/images/AntesDaMeiaNoite-img.jpg",
     "video": "",
+    "poster": "",
     "conteudo": [
       "Há quem espere que um novo relacionamento funcione como uma borracha capaz de apagar todas as suas angústias e assim se empenhe desesperadamente em achar alguém para ocupar um certo lugar.",
       "Quando o sujeito está sob esse ímpeto, tudo parece acontecer dentro dele mesmo, alimenta-se todo tipo de histórias, com qualquer pessoa, como se o amor já estivesse pronto esperando apenas um corpo capaz de encaixar todas essas fantasias.",
@@ -735,6 +786,7 @@
     "data": "06/03/2023",
     "imagem": "src/images/GinnyAndGeorgia-img.png",
     "video": "",
+    "poster": "",
     "conteudo": [
       "Para uma criança, infelizmente, não existe nenhuma outra opção para se separar de pais abusivos que não a fuga.",
       "A fuga e a negação são mecanismos de defesa repetidos - com ou sem necessidade - por Georgia em toda a sua vida.",
@@ -768,6 +820,7 @@
     "data": "19/01/2023",
     "imagem": "src/images/Recomeco-img.png",
     "video": "",
+    "poster": "",
     "conteudo": [
       "Ignacio Matte-Blanco falava do amor como um “deicídio” (matar Deus) sem matar Deus. Como Enrique Iglesias numa famosa canção que compara o amor a uma experiência religiosa, com “descobrir o infinito”, o psiquiatra e psicanalista entendia essa sensação como uma espécie de êxtase transcendental, um estado tão poderoso que poderia nos fazer sentir como deuses.",
       "Pensando desse modo, a palavra “entusiasmo” (que vem de en- theo, estar em Deus) ganha contornos mais profundos. Toda vez que estamos apaixonados, ficamos entusiasmados, mais vivos e perto do divino. Assim, Deus passa a ser uma metáfora belíssima sobre o amor, amando estamos em Deus e Deus também está dentro de nós.",
@@ -793,6 +846,7 @@
     "data": "29/12/2022",
     "imagem": "src/images/Fleabag-img.png",
     "video": "",
+    "poster": "",
     "conteudo": [
       "Quando há um hiato muito grande entre o que acreditamos que deveríamos querer e o que realmente queremos, qualquer escolha que fizermos acabará fatalmente ou na culpa ou no arrependimento.",
       "Permanecer eternamente na incerteza sobre o que se quer é uma forma ilusória de escapar dessas duas reações emocionais, muito humanas por sinal.",
@@ -818,6 +872,7 @@
     "data": "07/11/2022",
     "imagem": "src/images/TheBear-img.png",
     "video": "",
+    "poster": "",
     "conteudo": [
       "Freud, em seus escritos, falou mais de uma vez sobre a angústia que surge diante do êxito.",
       "Parte dessa posição é sustentada por um forte sentimento de culpa porque o sujeito não se acha merecedor de sua conquistas.",
@@ -847,4 +902,3 @@
     ]
   }
 ]
-
