@@ -323,36 +323,6 @@
     "trono"
   ]
 },
-
-  {
-    "titulo": "O sorriso que resiste",
-    "data": "14/02/2025",
-    "imagem": "src/images/AindaEstouAqui-img.jpg",
-    "video": "",
-    "poster": "",
-    "conteudo": [
-      "No contexto psicanalítico, o sorriso pode ser compreendido uma manifestação do Real que irrompe no Simbólico.",
-      "O Real, na teoria lacaniana, é aquilo que escapa à simbolização, que resiste ao controle e à dominação.",
-      "O sorriso desobediente de Eunice, em sua aparente simplicidade, carrega uma força extremamente disruptiva: ele não pode ser completamente capturado ou neutralizado pela lógica opressora do regime.",
-      "Ele persiste, como um resquício que se recusa a ser apagado, expressando a resistência do desejo pela vida em oposição à morte simbólica imposta pela ditadura, uma ditadura que, é importante destacar, contou com financiamento dos Estados Unidos.",
-      "Fernanda Torres, ao se posicionar nessa entrevista, nos recorda que tanto o sorriso quanto a fala são atos profundamente políticos, formas de afirmar que “nós existimos, nós resistimos”.",
-      "Por isso, “nós vamos sorrir” e “nós vamos falar também”, mesmo que isso implique assumir riscos e perder um prêmio (lembrando que já ganhamos vários por aí).",
-      "Sorrir e falar são, hoje e sempre, acima de tudo, instrumentos de luta, maneiras de romper com o status quo, reafirmando nossa existência diante de sistemas que, há anos, buscam nos reduzir ao silêncio e à invisibilidade."
-    ],
-    "hashtags": [
-      "aindaestouaqui",
-      "cinema",
-      "cinemanacional",
-      "ditadura",
-      "memória",
-      "resistência",
-      "lembrarparanãorepetir",
-      "oscar2025",
-      "desejo",
-      "fernandatorres",
-      "seltonmello"
-    ]
-  },
   {
   "titulo": "Merd@s acontecem",
   "data": "09/07/2025",
@@ -905,6 +875,437 @@
     "humanidade"
   ]
 },
+{
+  "titulo": "A religião da experiência",
+  "data": "07/04/2025",
+  "imagem": "",
+  "video": "src/images/ReligiaoExperiencia-vid.mp4",
+  "poster": "src/images/ReligiaoExperiencia-img.png",
+  "conteudo": [
+    "Como bem aponta Laurie, qualquer experiência pode se converter em religião: empregos, amores e seus manuais prontos.",
+    "Mas a vida, essa não traz “instruções divinas”, ela se inscreve lentamente na linguagem das escolhas, dos acasos e das repetições.",
+    "Mais que certezas prontas, é preciso tempo para entender que o significado não está lá fora esperando para ser descoberto. Ele nasce entre o cair e o levantar, entre o que perdemos e o que inventamos para preencher o que ficou pelo caminho.",
+    "Apesar da relação turbulenta com Jaclyn e Kate, nesse belíssimo monólogo, Laurie revela: o verdadeiro laço não habita o registro do encaixe perfeito (da completude ilusória), mas justamente o território do desejo.",
+    "Lugar onde, sim, SEMPRE FALTA, mas onde, também, há sempre a possibilidade de (re)CRIAR."
+  ],
+  "hashtags": [
+    "thewhitelotus",
+    "serie",
+    "laurie",
+    "amizade",
+    "religiao",
+    "experiencia",
+    "desejo",
+    "falta",
+    "significado",
+    "vida",
+    "monologo",
+    "relacoes"
+  ]
+},
+{
+  "titulo": "Salvar para ser salva",
+  "data": "02/04/2025",
+  "imagem": "src/images/SalvarParaSerSalva-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "“Salvar para ser salva” eis o pacto invisível que quase todas cumprem.",
+    "Mas o que acontece quando aquele que deveria ser salvo (supostamente) pode se “salvar” sozinho?",
+    "Desaba o teatro psíquico onde o sujeito encenava sua redenção através do outro. A fantasia narcísica de reparação: a de que “consertá-lo finalmente me tornaria inteira e digna de amor”.",
+    "Restando, então, a tarefa mais dura e libertadora: “salvar-se” da própria necessidade de salvar."
+  ],
+  "hashtags": [
+    "thewhitelotus",
+    "chelsea",
+    "serie",
+    "salvacao",
+    "narcisismo",
+    "fantasia",
+    "redencao",
+    "autoconhecimento",
+    "relacoes",
+    "cura",
+    "independencia",
+    "libertacao"
+  ]
+},
+{
+  "titulo": "O valor além do dinheiro",
+  "data": "28/03/2025",
+  "imagem": "src/images/ValorAlemDinheiro-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "No capitalismo, o dinheiro opera como um significante mestre, ou seja, ele organiza a realidade social e subjetiva ao atribuir valor a tudo. No entanto, Lacan nos lembra que o valor simbólico (aquilo que algo representa) nem sempre coincide com o valor material (o preço em dinheiro).",
+    "O discurso apresentado, que coloca Rose como a grande vilã de Titanic por “desperdiçar” o pingente, é sintomático no que Lacan chamou de “discurso do capitalista”.",
+    "Nesse discurso, tudo é reduzido a uma lógica de acumulação, produtividade e utilidade. O valor de uma pessoa ou de um objeto é medido exclusivamente por sua capacidade de gerar riqueza ou ser útil dentro do sistema.",
+    "Por exemplo, no tweet destacado, a única qualidade exaltada no “marido” de Rose é sua capacidade de acumulação. Sua identidade e valor são reduzidos à sua função econômica, como se nada mais importasse além disso.",
+    "Rose, ao contrário, opera a partir de uma lógica que desafia esse discurso. Ela valoriza a experiência subjetiva, o amor e a memória acima do valor monetário. Isso não a torna uma “vilã”, mas sim alguém que questiona a ordem dominante, ela é justamente aquela que nos ensina a enxergar o mundo além da lógica do dinheiro.",
+    "É claro que essa decisão também só foi possível porque Rose tinha uma posição privilegiada. No entanto, isso não diminui a profundidade do seu gesto. Ainda que sua realidade material tenha possibilitado essa escolha.",
+    "Seu gesto não perde significado por ter sido feito a partir de um lugar de privilégio; pelo contrário, ele ganha força ao desafiar e nos fazer pensar justamente sobre as estruturas que sustentam esse privilégio (não só dela, mas de outros personagens).",
+    "Ao jogar o pingente no mar, a protagonista de “Titanic” nos lembra que, em um mundo que frequentemente nos ensina a valorizar apenas o que podemos ter, é preciso também olhar para o que podemos ser."
+  ],
+  "hashtags": [
+    "titanic",
+    "rose",
+    "cinema",
+    "hollywood",
+    "capitalismo",
+    "lacan",
+    "dinheiro",
+    "valor",
+    "privilegio",
+    "memoria",
+    "simbolico"
+  ]
+},
+{
+  "titulo": "O lugar do desejo",
+  "data": "25/03/2025",
+  "imagem": "src/images/LugarDesejoWhiteLotus-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "Em “The White Lotus”, o trio de amigas personifica a rivalidade entre mulheres, onde a amizade entre elas é atravessada por uma competição inconsciente.",
+    "O envolvimento de Jaclyn com Valentim nos últimos episódios não tem nada de afetivo. Aliás ao que parece, nem mesmo o relacionamento com o próprio namorado tem.",
+    "A personagem não quer possuir o objeto de desejo (o homem), mas sim ocupar o lugar do objeto desejado. Seus conflitos com as companheiras de viagem revelam menos “ciúmes românticos” e mais uma angústia de não ser vista, sua verdadeira obsessão, como assinalado por Laurie.",
+    "Porém, é importante destacar que a histeria de Jaclyn (enquanto estrutura psíquica – essas marcas indeléveis deixadas pelo desejo alheio e pelas normas sociais coercitivas) não surge isoladamente. Ela é produto de um sistema simbólico que, historicamente, condiciona o valor feminino à juventude e à aparência.",
+    "Essa dinâmica de disputa com Katie e Laurie opera em dois registros: além de revelar seus próprios conflitos internos, é também uma estratégia defensiva contra a ameaça de invisibilidade que o envelhecimento representa socialmente."
+  ],
+  "hashtags": [
+    "thewhitelotus",
+    "serie",
+    "desejo",
+    "histeria",
+    "feminilidade",
+    "amizade",
+    "competicao",
+    "invisibilidade",
+    "juventude"
+  ]
+},
+{
+  "titulo": "Ser inteiro na jornada",
+  "data": "22/03/2025",
+  "imagem": "src/images/SerInteiroJornada-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "Nem sempre o movimento é sobre chegar a um lugar; às vezes, é sobre se permitir ser inteiro no meio da jornada.",
+    "Eu te entendo Mark S (e muito!)"
+  ],
+  "hashtags": [
+    "severance",
+    "ruptura",
+    "serie",
+    "jornada",
+    "autoconhecimento",
+    "marcos",
+    "serinheiro",
+    "severance",
+    "processo",
+    "vida",
+    "movimento",
+    "reflexao"
+  ]
+},
+{
+  "titulo": "Ouvindo o indizível",
+  "data": "20/03/2025",
+  "imagem": "src/images/OuvindoIndizivel-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "Um analista não ouve absurdos; ele ouve o que a maioria sente e pensa, mas não tem coragem de dizer.",
+    "Ele ouve o que está sendo disfarçado sem parar, o que foi sufocado pelo medo de ser condenado.",
+    "E, ao ouvir, ele não se assusta, não recua, como quem sabe que absurdo mesmo é só o que ainda não foi nomeado.",
+    "Não acho que Rick tenha agido exatamente como um analista nessa cena. Mas ele fez algo que considero essencial para a função: ele ouviu.",
+    "Ouviu sem interromper, sem julgar, sem tentar consertar.",
+    "No fundo, talvez seja só disso que precisamos: alguém que mantenha o espaço aberto para o que precisa ser dito, mesmo quando tudo pareça sem sentido, e que, em vez de opinar, devolva apenas aos nossos ouvidos aquilo que nós mesmos falamos.",
+    "Alguém que entenda que, em certos momentos, o silêncio é a única resposta possível."
+  ],
+  "hashtags": [
+    "thewhitelotus",
+    "waltongoggins",
+    "samrockwell",
+    "serie",
+    "escuta",
+    "analista",
+    "ouvir",
+    "silencio",
+    "empatia",
+    "rick",
+    "absurdo",
+    "fala",
+    "lugardafala"
+  ]
+},
+{
+  "titulo": "O poder do invisível",
+  "data": "15/03/2025",
+  "imagem": "src/images/PoderInvisivel-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "O iceberg nos lembra que, muitas vezes, o essencial reside justamente no que não vemos, no que não expressamos, mas que, ainda assim, está em movimento, agindo em silêncio, sob a superfície.",
+    "O invisível, o não dito, tudo isso carrega uma força imensa, capaz de mover montanhas sem fazer barulho. Assim como o iceberg, somos feitos de camadas, e é nas profundezas que reside o poder de mudar (quase) tudo ou, ainda, (quem sabe) pelo menos alguma coisa.",
+    "Vale para a cena (linda!), vale para o personagem, vale para toda a série… mas vale, principalmente, para as transformações que desejamos fazer na vida, viu?"
+  ],
+  "hashtags": [
+    "severance",
+    "ruptura",
+    "mrmilchick",
+    "serie",
+    "iceberg",
+    "invisivel",
+    "mudanca",
+    "profundezas",
+    "transformacao",
+    "personagem",
+    "vida",
+    "forcainterior"
+  ]
+},
+{
+  "titulo": "A liberdade de ser",
+  "data": "06/03/2025",
+  "imagem": "src/images/LiberdadeDeSer-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "Se a liberdade não surge do reconhecimento dos nossos desejos obscuros e do enfrentamento dos nossos medos mais profundos, ela pode se perder em atos de “rebeldia” vazios de significado.",
+    "A verdadeira liberdade só se concretiza quando deixa de ser uma resposta ao Outro e se torna uma expressão mais próxima de nós mesmos."
+  ],
+  "hashtags": [
+    "fightclub",
+    "clubedaluta",
+    "chuckpalahniuk",
+    "tylerdurden",
+    "cinema",
+    "hollywood",
+    "liberdade",
+    "autenticidade",
+    "desejo",
+    "medos",
+    "rebeldia",
+    "autoconhecimento",
+    "sujeito",
+    "outro",
+    "existencia"
+  ]
+},
+{
+  "titulo": "O monstro no espelho",
+  "data": "06/03/2025",
+  "imagem": "src/images/MonstroNoEspelho-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "Para uma mãe que, inconscientemente, projeta suas próprias angústias mal elaboradas no filho, o mundo pode se transformar em um campo minado, onde cada gesto alheio pode parecer uma ameaça à sua integridade.",
+    "Para um aluno decepcionado com seu professor, a figura que deveria guiá-lo se torna uma sombra que cresce, até se transformar em algo horrível, refletindo não só as falhas do outro, mas também as suas próprias inseguranças.",
+    "Para uma criança, os limites entre fantasia e realidade podem ser tão frágeis que o sonho e a vigília se misturam, tornando-se quase impossível distingui-los.",
+    "A realidade nunca é imaculada. Ela está sempre mediada pelo olhar de quem a observa, como um caleidoscópio que reproduz experiências, medos e desejos.",
+    "Sendo assim, afinal, quem é, de fato, o “monstro”?",
+    "Será ele realmente o outro, ou apenas um reflexo das sombras que carregamos dentro de nós, espalhadas pelo mundo?",
+    "Talvez, quem sabe, o “monstro” seja apenas a parte de nós que ainda não aprendemos a acolher…"
+  ],
+  "hashtags": [
+    "monster",
+    "cinema",
+    "hirokazu",
+    "cult",
+    "projecao",
+    "sombra",
+    "realidade",
+    "fantasia",
+    "autoacolhimento",
+    "inseguranca",
+    "infancia",
+    "reflexao"
+  ]
+},
+{
+  "titulo": "Amor e memória",
+  "data": "04/03/2025",
+  "imagem": "src/images/ResiduosAmorMemoria-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "Mesmo quando a memória falha, e as lembranças, pouco a pouco, se dissipam, quem sabe o amor talvez possa resistir como um resíduo — ainda que seja apenas na forma de um vazio que insiste em buscar, desesperadamente, por algum significado.",
+    "Brilho Eterno de uma Ruptura sem Lembranças…"
+  ],
+  "hashtags": [
+    "eternalsunshineofthespotlessmind",
+    "brilhoeternodeumamentesemlembrancas",
+    "cinema",
+    "hollywood",
+    "memoria",
+    "amor",
+    "lembrancas",
+    "esquecimento",
+    "vazio",
+    "sentido",
+    "emocao"
+  ]
+},
+{
+  "titulo": "Fantasia e brutalidade",
+  "data": "03/03/2025",
+  "imagem": "src/images/EntreFantasiaBrutalidadeAnora-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "Li muitos comentários sobre “Anora” desde sua estreia, mas o que mais me marcou foi a percepção de alguém que disse que, no mundo real, alguém com as condições dela provavelmente acabaria em uma caçamba de lixo com um tiro na cabeça.",
+    "Essa observação, embora extremamente dura, reflete uma desconexão entre a realidade crua que o filme tenta retratar e a forma como os personagens são construídos.",
+    "A infantilização excessiva e a falta de consequências reais para as ações de todos os envolvidos criam uma narrativa que parece distante da brutalidade do mundo que supostamente busca representar e criticar.",
+    "Enquanto assistimos a Anora se envolver em situações perigosas e tomar decisões ingênuas e impulsivas, a ausência de um desfecho mais verossímil acaba por minimizar as questões que realmente seriam importantes para discussão. No fim, fiquei com a sensação de que o filme subestima a gravidade das situações que apresenta.",
+    "O resultado é uma história que tenta ser ousada, mas que na minha opinião deixou uma sensação de superficialidade generalizada. Sean Baker opta por um final que, embora não seja nem um pouco feliz, ainda parece amenizar demais os riscos e os perigos enfrentados pela protagonista.",
+    "Essa escolha, embora possa ter sido intencional para criar um tom mais leve e “divertido”-com cafetões “gente boa”, máfia russa atrapalhada e outras situações que beiram um pouco ao absurdo, acaba por banalizar temas importantes como exploração sexual, violência e desigualdade social. Essas coisas que existem e são vivenciadas de outra forma na vida real, sabe? (vide “Ainda Estou Aqui”).",
+    "Nada contra a fantasia, desde que ela se assuma como tal."
+  ],
+  "hashtags": [
+    "anora",
+    "seanbaker",
+    "critica",
+    "cinema",
+    "hollywood",
+    "realidade",
+    "fantasia",
+    "violencia",
+    "desigualdade",
+    "exploracaosexual",
+    "reflexao"
+  ]
+},
+{
+  "titulo": "A liberdade da criação artística",
+  "data": "27/02/2025",
+  "imagem": "src/images/LiberdadeCriacaoArtistica-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "Na sua carta de agradecimento pelo Prêmio Nobel de Literatura, que ele não compareceu para receber, Dylan deixou uma provocação sobre o seu próprio processo criativo. Para falar sobre, trouxe Shakespeare, destacando que o dramaturgo jamais se questionaria se sua obra poderia ser considerada ou não como “verdadeira literatura”.",
+    "Para ele, Shakespeare preocupava-se com questões práticas: se o personagem estaria no lugar certo, se o ator era adequado, se o orçamento cobriria o cenário, mas jamais se questionaria se, aos olhos dos outros, aquilo era literatura.",
+    "Essa reflexão de Dylan nos conduz a um ponto central em “A Complete Unknown”: a verdadeira criação artística não deve (ou não deveria) carregar a obrigação de se justificar ou se adaptar a critérios impostos de fora. Ela existe por si só, livre de amarras que tentam definir o seu significado.",
+    "Quando Dylan compunha, ele não estava preocupado em agradar a crítica ou em se encaixar em um gênero específico; ele estava simplesmente seguindo sua sensibilidade e necessidade de expressão.",
+    "Acredito que a relação entre um artista e seus fãs pode ser próxima, mas jamais simbiótica. Qualquer criador precisa ter liberdade plena para explorar e expandir sua obra, e cabe aos fãs decidirem se ela ainda ressoa com eles ou não — mas não exigir que o artista fique aprisionado ao que esperam dele.",
+    "Quando tentamos limitar a criatividade a demandas previsíveis, reduzimos não apenas o artista, mas também todo o potencial de transformação que a arte e todas as outras formas de expressão e criação podem trazer. Como disse Henry Ford certa vez: “Se eu tivesse perguntado às pessoas o que elas queriam, elas teriam dito cavalos mais rápidos.”",
+    "A música, a poesia, a pintura, a ciência, o pensamento filosófico e etc só avançam quando alguém se atreve a pensar de maneira diferente, seguindo uma visão que ainda não foi completamente compreendida, permitindo-se divagar além do óbvio."
+  ],
+  "hashtags": [
+    "completeunknown",
+    "umcompletodesconhecido",
+    "cinema",
+    "hollywood",
+    "criatividade",
+    "arte",
+    "musica",
+    "bobdylan",
+    "shakespeare",
+    "expressao",
+    "liberdadeartistica",
+    "inovacao",
+    "nobel",
+    "henryford"
+  ]
+},
+{
+  "titulo": "O sábio louco e a dor sublimada",
+  "data": "24/02/2025",
+  "imagem": "src/images/SabioLoucoDorSublimada-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "Na psicanálise, o humor pode ser visto como uma forma de sublimação, um mecanismo de defesa que transforma a dor em algo mais suportável, ainda que momentaneamente.",
+    "Kieran Culkin, em “The Real Pain”, conseguiu trazer para as telas essa dualidade entre humor e melancolia com perfeição, sendo absolutamente digno de todos os prêmios que tem recebido.",
+    "Cada piada ácida, cada comentário cortante, esconde uma dor que nunca é totalmente nomeada, mas que permanece sempre presente, como uma sombra silenciosa na sua atuação.",
+    "Essa ambiguidade entre o riso e a dor me remete a outra figura conhecida do cinema: Jim Carrey.",
+    "Muitas vezes, as pessoas riem de suas “brincadeiras” sem perceber que, por trás delas, há uma reflexão séria, quase filosófica.",
+    "O público, sempre apegado à sua imagem de comediante, nem sempre consegue enxergar a seriedade por trás de suas palavras.",
+    "Esse contraste, entre o que é dito de forma brincalhona e o que é profundamente sério, nos leva à figura do louco.",
+    "No senso comum, o louco é aquele que ri quando todos choram, que fala o que ninguém ousa dizer, que desafia as normas sociais.",
+    "No entanto, “o louco pode ser o único sábio em uma corte de tolos”, pois consegue enxergar além das aparências e questionar as verdades que todos aceitam sem pensar.",
+    "Desse modo, a loucura pode se revelar uma forma de sanidade, uma maneira única de enxergar o mundo sob uma perspectiva que desafia e transcende o convencional.",
+    "Em “The Real Pain”, Benji personifica essa figura do “louco sábio”. Ele é aquele que ri quando todos choram, que chora quando todos riem, que se comporta como ninguém se atreve a fazê-lo.",
+    "Sua “excentricidade”, portanto, não é uma desordem, mas uma forma de se posicionar diante de um mundo que muitas vezes prefere a superficialidade à profundidade.",
+    "Benji, com seu sarcasmo e sua aparente “desconexão”, nos lembra que a verdadeira sabedoria pode residir justamente na capacidade de questionar, de rir da dor e de encarar as contradições da vida de frente.",
+    "Ele é a prova de que, às vezes, é preciso ser suficientemente “louco” para enxergar com clareza o que todos insistem em ignorar."
+  ],
+  "hashtags": [
+    "therealpain",
+    "averdadeirador",
+    "cinema",
+    "hollywood",
+    "humor",
+    "sublimacao",
+    "melancolia",
+    "kieranculkin",
+    "jimcarrey",
+    "sabedoria",
+    "loucura"
+    
+  ]
+},
+{
+  "titulo": "A crueldade do ultraconservadorismo",
+  "data": "20/02/2025",
+  "imagem": "src/images/TheApprenticeEcosSuccession-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "Esqueci de mencionar aqui e nos stories que no fim de semana assisti a “The Apprentice”, e a minha impressão foi que o diretor Ali Abbasi ficou completamente fascinado por “Succession” (como todos nós) e tentou, de certa forma, reproduzir a série em sua obra.",
+    "A influência é tão evidente que chega a ser palpável: desde a escalação de Jeremy Strong até as escolhas estéticas de câmera tremida, zooms rápidos e cortes bruscos, que remetem ao estilo documental do sucesso da HBO.",
+    "Além disso, os cenários: prédios de vidro imponentes, cenas dentro de carros de luxo, salas de reunião minimalistas e festas com um ar decadente e ultrapassado - parecem transportar o espectador diretamente para o universo dos Roy, só que com uma estética que lembra um VHS desgastado, como se a história fosse uma espécie de “versão alternativa” ambientada nos anos 70/80.",
+    "No entanto, apesar do cansaço que essa repetição pode causar, há uma cena que ficou gravada na minha memória: o aniversário de Roy Cohn, o controverso mentor de Trump.",
+    "O bolo de aniversário, com estrelinhas no lugar de velas, para evitar que ele as soprasse e, assim, “disseminasse o vírus da Aids”, é uma imagem ao mesmo tempo absurda e profundamente triste.",
+    "O sorriso desolado de Cohn, vítima do próprio veneno, em uma atuação de Jeremy Strong que merece todos os elogios, encapsula a essência de um ultraconservadorismo que instrumentaliza a desinformação e o medo para disseminar ainda mais preconceito e crueldade.",
+    "Ps- Sebastian Stan também está muito bem no papel."
+  ],
+  "hashtags": [
+    "theapprentice",
+    "succession",
+    "aliabbasi",
+    "jeremystrong",
+    "sebastianstan",
+    "cinema",
+    "hollywood",
+    "serie",
+    "analise",
+    "ultraconservadorismo",
+    "preconceito",
+    "desinformacao"
+  ]
+},
+{
+    "titulo": "O sorriso que resiste",
+    "data": "14/02/2025",
+    "imagem": "src/images/AindaEstouAqui-img.jpg",
+    "video": "",
+    "poster": "",
+    "conteudo": [
+      "No contexto psicanalítico, o sorriso pode ser compreendido uma manifestação do Real que irrompe no Simbólico.",
+      "O Real, na teoria lacaniana, é aquilo que escapa à simbolização, que resiste ao controle e à dominação.",
+      "O sorriso desobediente de Eunice, em sua aparente simplicidade, carrega uma força extremamente disruptiva: ele não pode ser completamente capturado ou neutralizado pela lógica opressora do regime.",
+      "Ele persiste, como um resquício que se recusa a ser apagado, expressando a resistência do desejo pela vida em oposição à morte simbólica imposta pela ditadura, uma ditadura que, é importante destacar, contou com financiamento dos Estados Unidos.",
+      "Fernanda Torres, ao se posicionar nessa entrevista, nos recorda que tanto o sorriso quanto a fala são atos profundamente políticos, formas de afirmar que “nós existimos, nós resistimos”.",
+      "Por isso, “nós vamos sorrir” e “nós vamos falar também”, mesmo que isso implique assumir riscos e perder um prêmio (lembrando que já ganhamos vários por aí).",
+      "Sorrir e falar são, hoje e sempre, acima de tudo, instrumentos de luta, maneiras de romper com o status quo, reafirmando nossa existência diante de sistemas que, há anos, buscam nos reduzir ao silêncio e à invisibilidade."
+    ],
+    "hashtags": [
+      "aindaestouaqui",
+      "cinema",
+      "cinemanacional",
+      "ditadura",
+      "memória",
+      "resistência",
+      "lembrarparanãorepetir",
+      "oscar2025",
+      "desejo",
+      "fernandatorres",
+      "seltonmello"
+    ]
+  },
   {
     "titulo": "Ódio retroativo",
     "data": "07/02/2025",
