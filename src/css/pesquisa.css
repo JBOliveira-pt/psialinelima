@@ -150,7 +150,7 @@
   opacity: 0.95;
 }
 .post-content.expanded {
-  max-height: 2000px;
+  max-height: 3500px;
   opacity: 1;
 }
 .post h2,
@@ -342,4 +342,5 @@
     font-size: 1.5rem;
   }
 }
+
 
