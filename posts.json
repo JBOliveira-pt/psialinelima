@@ -1,5 +1,39 @@
 [
   {
+  "titulo": "Entre escombros e fantasmas",
+  "data": "16/08/2025",
+  "imagem": "",
+  "video": "src/images/lachimera-vid.mp4",
+  "poster": "src/images/lachimera-img.png",
+  "conteudo": [
+    "Há muito tempo eu namorava “La Chimera” no @filminportugal.",
+    "Na semana passada, finalmente consegui assistí-lo e, confesso, que excedeu as minhas expectativas, que já eram altas.",
+    "O filme conta a história de Arthur, um jovem arqueólogo que se envolve com um grupo de ladrões de túmulos de relíquias etruscas.",
+    "Para este grupo, a quimera é o desejo pelo dinheiro fácil; já para Arthur, ela se parece com a mulher que ele perdeu, Beniamina.",
+    "Freud via no luto não apenas a dor da perda, mas um conflito subterrâneo entre Eros e Thanatos.",
+    "Quando Arthur persegue o “fantasma” de Beniamina, ele não está apenas atrás de um corpo, mas também construindo, inconscientemente, a própria ruína.",
+    "Esse é um movimento muito comum em quem perdeu um ente querido: a culpa silenciosa de que era ele quem deveria ter partido, que seu lugar é entre os escombros, não entre os vivos.",
+    "Não acho que Arthur buscava a “ressurreição” da amada, e sim uma sepultura que finalmente o aceitasse.",
+    "Não se trata de resgatar Beniamina do reino das sombras, mas deixar que elas o engulam também.",
+    "O filme nos pergunta: quando perdemos alguém, quem é o verdadeiro falecido? O que morreu ou aquele que se recusa a viver sem ele?",
+    "Arthur muito bem interpretado por Josh O’Connor que transmite toda a melancolia do personagem, é um morto vivo.",
+    "Aqui, Rohrwacher não nos oferece redenção, apenas a verdade nua e crua de que algumas perdas não se superam. Elas nos enterram vivos."
+  ],
+  "hashtags": [
+    "lachimera",
+    "luto",
+    "fantasmas",
+    "cinema",
+    "cult",
+    "arthur",
+    "erosethanatos",
+    "perda",
+    "melancolia",
+    "joshoconnor",
+    "rohrwacher"
+  ]
+},
+  {
     "titulo": "Raiva e justiça",
     "data": "13/08/2025",
     "imagem": "src/images/RaivaJustica-img.png",
@@ -1265,13 +1299,12 @@
   "hashtags": [
     "theapprentice",
     "succession",
+    "serie",
+    "cinema",
+    "hollywood",
     "aliabbasi",
     "jeremystrong",
     "sebastianstan",
-    "cinema",
-    "hollywood",
-    "serie",
-    "analise",
     "ultraconservadorismo",
     "preconceito",
     "desinformacao"
@@ -1296,6 +1329,8 @@
       "aindaestouaqui",
       "cinema",
       "cinemanacional",
+      "eunicepaiva",
+      "rubenspaiva",
       "ditadura",
       "memória",
       "resistência",
@@ -1306,6 +1341,74 @@
       "seltonmello"
     ]
   },
+  {
+  "titulo": "Equilíbrio das contradições",
+  "data": "11/02/2025",
+  "imagem": "src/images/EquilibrioContradicoes-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "Quando paramos de lutar contra nós mesmos e começamos a compreender nossas múltiplas facetas, podemos alcançar uma forma singular de harmonia.",
+    "A preguiça e a dedicação, longe de se anularem, podem coexistir, criando um ritmo próprio que respeita tanto a necessidade de descanso quanto a de realização.",
+    "As contradições nem sempre são sinais de desordem a serem erradicadas, mas sim expressões da nossa humanidade (e também de fases da nossa vida).",
+    "E é ao abraçá-las que podemos descobrir um equilíbrio verdadeiro, ainda que esse equilíbrio traga consigo, em sua natureza, o paradoxo de ser, ele mesmo, uma contradição.",
+    "Muitas vezes, entramos em uma análise buscando mudanças ou ideais quase inatingíveis, mas o que acabamos encontrando e, principalmente, aceitando, é a nossa própria essência.",
+    "“Dá certo no fim”"
+  ],
+  "hashtags": [
+    "seltonmello",
+    "tvbrasil",
+    "contradicoes",
+    "harmonia",
+    "equilibrio",
+    "humanidade",
+    "aceitacao",
+    "autoconhecimento",
+    "essencia",
+    "mudanca",
+    "paradoxo"
+  ]
+},
+{
+  "titulo": "Nós ainda estamos aqui",
+  "data": "09/02/2025",
+  "imagem": "src/images/nosaindaestamosaqui-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "O filme que retrata a história de Eunice Paiva e a dor de sua família durante a ditadura militar no Brasil é uma obra que transcende o cinema para se tornar um poema visual sobre resistência, memória e perda.",
+    "Cada cena é repleta de silêncios ensurdecedores, onde o não dito ressoa mais alto do que as palavras.",
+    "A ausência de Rubens, desaparecido pelo regime, é personificada não apenas pela falta de seu corpo, mas pelos espaços vazios que ele deixou: a cadeira à mesa, o escritório intacto e o olhar perdido da esposa ao esperar por respostas que nunca chegam.",
+    "A câmera, como um observador discreto, captura a dor íntima de Eunice, mas também a transforma em um símbolo universal. Seu rosto, marcado ora pela tristeza, ora pela determinação, reflete a luta de milhares de famílias que sofreram sob a opressão.",
+    "A luz que entra pela janela ilumina sua figura, mas não dissipa a sombra. Esse jogo de luz e escuridão é uma metáfora para a dualidade de sua existência: a mãe que encontrou nos filhos a força para não sucumbir, e a viúva que carrega um pesar sem fim.",
+    "A casa dos Paiva, antes um espaço de alegria e união, torna-se um personagem em si mesma. As paredes parecem reter os ecos das lembranças alegres de outrora, enquanto o presente é preenchido por um mutismo pesado, amplificando a sensação de desamparo.",
+    "A câmera percorre os cômodos como se buscasse algo, ou alguém que nunca será encontrado. Esse vazio é uma ferida aberta, uma lembrança constante de que a ditadura não roubou apenas vidas, mas também dilacerou sonhos.",
+    "Eunice, em sua quietude inquieta, é a encarnação da resistência. Seus gestos são delicados, mas firmes; suas lágrimas, contidas, mas expressivas.",
+    "Ela não precisa gritar para ser ouvida. Sua presença é suficiente para nos lembrar que a luta pela verdade não se mede pela grandiosidade dos gestos, mas pela constância de quem se recusa a esquecer, mesmo quando o mundo parece calar.",
+    "No final, o título do filme ressoa como uma espécie de mantra, uma promessa individual e coletiva: nós ainda estamos aqui, e juntos, com um sorriso desobediente no rosto, seguiremos em frente.",
+    "Porque a vida, mesmo carregando o fardo da ausência, insiste em continuar. E a luta por justiça, por mais difícil que seja, é o que impede de sermos devorados pela angústia da impotência diante de um país que, insistentemente, vira as costas para o seu próprio passado, negando-se a aprender com ele.",
+    "Ps.1- Fernanda Torres, simplesmente magnífica. Que nó na garganta na cena em que ela segura uma certidão de óbito com um sorriso no rosto. Sua atuação minimalista, porém potente, é um verdadeiro exemplo de como menos pode ser infinitamente mais.",
+    "Ps. 2– Fernanda Montenegro não precisa falar. Repito: não precisa falar! E só precisa praticamente de uma cena. Aquele olhar... é como se nos atravessasse, carregando em si toda a dor, a história e a força de quem já viveu tanto.",
+    "Ps. 3– Selton Mello domina a tela com uma presença tão intensa que, quando some, sua ausência é sentida por todos nós, como se fizesse parte da nossa própria experiência.",
+    "Ps. 4– Foi lindo ver o cinema lotado. O filme é tão avassalador que muitos, inclusive eu, ficaram paralisados nas cadeiras, incapazes de se levantar logo após o fim. Foi preciso um tempo para respirar, digerir e voltar à realidade."
+  ],
+  "hashtags": [
+    "aindaestouaqui",
+    "cinema",
+    "cinemanacional",
+    "rubenspaiva",
+    "eunicepaiva",
+    "resistencia",
+    "memoria",
+    "ditaduramilitar",
+    "justica",
+    "fernandatorres",
+    "fernandamontenegro",
+    "seltonmello",
+    "oscar2025",
+    "historiasdobrasil"
+  ]
+},
   {
     "titulo": "Ódio retroativo",
     "data": "07/02/2025",
