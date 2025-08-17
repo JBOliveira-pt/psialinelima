@@ -305,7 +305,7 @@ font-weight: 550;}
   transition: max-height 0.5s ease, opacity 0.5s ease;
   opacity: 0.95;}
 .post-content.expanded {
-  max-height: 2000px;
+  max-height: 3000px;
   opacity: 1;}
 .post:hover{
   transform: scale(1.05);
@@ -325,7 +325,7 @@ font-weight: 550;}
   gap: 6px 4px;
   align-items:normal;
   overflow: hidden;
-  line-height: 0.8;
+  line-height: 0.9;
   font-size: 0.85em;
   margin-top: 0;
   margin-right: 0;
@@ -481,9 +481,9 @@ font-weight: 550;}
   pointer-events: none;
   transition: opacity .2s;
   width:60%;
-  height: 95.3%;
+  height: 95.4%;
   margin: 0 auto;
-  margin-top: 2.7%;  
+  margin-top: 2.6%;  
 }
 .video-wrapper video {
   width: 100%;
@@ -522,6 +522,7 @@ footer {
   border-color: #333;
   outline: 2px solid #b2faff;
 }
+
 
 
 
