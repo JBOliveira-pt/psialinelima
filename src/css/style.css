@@ -272,6 +272,7 @@ main {
 .post h2 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.5rem;
+  line-height: 110%;
   color: #000000;
   margin-bottom: 0px;}
 .post h4 {
@@ -522,6 +523,7 @@ footer {
   border-color: #333;
   outline: 2px solid #b2faff;
 }
+
 
 
 
