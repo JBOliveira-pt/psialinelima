@@ -1,38 +1,81 @@
 // Flip 3D do card inteiro (.post) com direção vinculada à borda "pegada"
-// - Mouse: cursor "grab" nas bordas; só gira ao arrastar nelas
-// - Touch/pen: deduz borda pelo lado tocado (usa meio como fallback)
-// - Cada gesto vira 180° no sentido da borda e pode repetir indefinidamente
+// Correções p/ mobile: perspectiva local (transform: perspective()), eixo central estável
+// - Mouse: cursor "grab" nas bordas; só gira ao arrastar e cruzar o centro
+// - Touch/pen: deduz borda pelo lado tocado; só gira ao cruzar o centro
+// - Cada gesto adiciona 180° no sentido da borda (E→D pela esquerda, D→E pela direita), infinitamente
 // - Mantém o scale do :hover compondo com rotateY
-// - Verso vazio (sem espelhamento da frente) para conteúdo futuro
+// - Verso vazio (sem espelhamento da frente)
 (function () {
   const STYLE_ID = 'tilt-cards-style';
-  const ANGLE_STEP = 180;     // cada gesto vira 180°
-  const SNAP_DEG = 90;        // limiar p/ completar ou cancelar o flip
-  const EDGE_W = 42;          // zona de borda (px) p/ "pegar" com mouse
-  const MOVE_THRESHOLD = 6;   // px p/ considerar arrasto
-  const TRANSITION_MS = 900;  // mais lento a pedido
+  const ANGLE_STEP = 180;         // cada gesto vira 180°
+  const EDGE_W_DESKTOP = 42;      // zona de borda p/ mouse
+  const EDGE_W_MOBILE  = 56;      // zona de borda p/ touch (um pouco maior)
+  const MOVE_THRESHOLD = 6;       // px p/ distinguir toque acidental
+  const MS_DESKTOP = 900;         // duração da animação em desktop
+  const MS_MOBILE  = 1050;        // em mobile, um pouco mais longa
+
+  function isMobileLike() {
+    return window.matchMedia('(max-width: 600px)').matches;
+  }
+  function getEdgeZone() {
+    return isMobileLike() ? EDGE_W_MOBILE : EDGE_W_DESKTOP;
+  }
+  function getTransitionMs() {
+    return isMobileLike() ? MS_MOBILE : MS_DESKTOP;
+  }
+  function computeLocalPerspective(pxWidth) {
+    // Quanto maior o valor, menor a distorção. Em telas pequenas aumentamos mais.
+    const factor = isMobileLike() ? 10.5 : 8.5; // ajustado p/ estabilidade visual
+    return Math.round(Math.max(280, pxWidth) * factor);
+  }
 
   function injectCSS() {
     if (document.getElementById(STYLE_ID)) return;
     const css = `
       .tilt-card {
         transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        transform-origin: center center;
+        -webkit-transform-origin: center center;
+        transform-box: border-box; /* usa a caixa do card como referência */
+        will-change: transform;
+        contain: paint;
+        position: relative; /* necessário p/ .card-back absoluta */
       }
       .tilt-card .card-face {
         backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
         transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        will-change: transform;
+        contain: paint;
       }
-      /* Frente fica no fluxo normal, com transform 3D explícito para backface funcionar */
+      /* Frente mantém fluxo e ativa backface corretamente */
       .tilt-card .card-front {
         position: relative;
         transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
       }
-      /* Verso vazio, sobreposto, pronto para conteúdo futuro */
+      /* Verso vazio, cobre toda a área quando visível (em 180°) */
       .tilt-card .card-back {
         position: absolute;
         inset: 0;
         transform: rotateY(180deg);
-        pointer-events: none; /* evita capturar cliques por engano enquanto estiver vazio */
+        -webkit-transform: rotateY(180deg);
+        pointer-events: none;
+      }
+      /* Evita flicker em mídia/texto durante o 3D */
+      .tilt-card img, .tilt-card video, .tilt-card canvas {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+      }
+      .tilt-card h1, .tilt-card h2, .tilt-card h3,
+      .tilt-card p, .tilt-card span, .tilt-card a, .tilt-card button {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+      }
+      @media (hover:hover) and (pointer:fine) {
+        .tilt-card { cursor: default; }
       }
     `;
     const style = document.createElement('style');
@@ -41,28 +84,19 @@
     document.head.appendChild(style);
   }
 
-  function ensurePerspective(post) {
-    const parent = post.parentElement;
-    if (parent && getComputedStyle(parent).perspective === 'none') {
-      parent.style.perspective = '1000px';
-      parent.style.perspectiveOrigin = '50% 50%';
-    }
-  }
-
   function inEdgeZone(post, clientX) {
     const r = post.getBoundingClientRect();
     const x = clientX - r.left;
+    const EDGE_W = getEdgeZone();
     if (x <= EDGE_W) return 'left';
     if (x >= r.width - EDGE_W) return 'right';
     return null;
   }
-
   function nearestSide(post, clientX) {
     const r = post.getBoundingClientRect();
     const x = clientX - r.left;
     return x < r.width / 2 ? 'left' : 'right';
   }
-
   function getComputedScale(el) {
     const t = getComputedStyle(el).transform;
     if (!t || t === 'none') return 1;
@@ -80,43 +114,80 @@
     const st = post.__tilt;
     if (!st) return;
 
-    // Se ângulo alvo é múltiplo de 180 e não está arrastando nem hovered, libere o :hover do CSS
-    if (!st.dragging && (st.angleTarget % ANGLE_STEP === 0) && !st.hovered) {
-      if (st.angleTarget === 0) {
-        post.style.transform = '';
-        return;
-      }
+    // Libera o :hover nativo quando estiver 0, 360, 720... e sem gesto/hover
+    if (!st.dragging && (st.angleTarget % 360 === 0) && !st.hovered) {
+      post.style.transform = '';
+      post.style.webkitTransform = '';
+      post.style.transition = '';
+      post.style.webkitTransition = '';
+      return;
     }
 
     const scale = st.hovered ? (st.hoverScale || 1) : 1;
     const angle = st.dragging ? st.currentAngle : st.angleTarget;
-    post.style.transform = `scale(${scale}) rotateY(${angle}deg)`;
+    const ms = getTransitionMs();
+
+    // perspectiva local por card (alinha o eixo ao centro do próprio card)
+    const persp = st.localPersp;
+
+    if (!st.dragging) {
+      post.style.transition = `transform ${ms}ms cubic-bezier(.4,0,.2,1)`;
+      post.style.webkitTransition = `-webkit-transform ${ms}ms cubic-bezier(.4,0,.2,1)`;
+    }
+    // Ordem: perspective -> rotateY -> scale (reduz distorção e deslocamentos)
+    const tf = `perspective(${persp}px) rotateY(${angle}deg) scale(${scale})`;
+    post.style.transform = tf;
+    post.style.webkitTransform = tf;
+  }
+
+  function triggerFlip(post, e) {
+    const st = post.__tilt;
+    if (st.flipTriggered) return;
+    st.flipTriggered = true;
+    st.dragging = false;
+
+    st.angleTarget = st.startAngle + st.dirSign * ANGLE_STEP;
+    applyTransform(post);
+
+    try { post.releasePointerCapture(e.pointerId); } catch {}
+    const ms = getTransitionMs();
+    setTimeout(() => {
+      if (!post.__tilt) return;
+      if (post.__tilt.angleTarget % 360 === 0 && !post.__tilt.hovered) {
+        post.style.transition = '';
+        post.style.webkitTransition = '';
+        post.style.transform = '';
+        post.style.webkitTransform = '';
+      }
+    }, ms + 60);
   }
 
   function startDrag(post, e, requireEdgeForMouse) {
     const isMouse = e.pointerType === 'mouse';
 
-    // Determina a borda de início
     let side = inEdgeZone(post, e.clientX);
-    if (isMouse && requireEdgeForMouse && !side) {
-      // mouse só inicia na borda
-      return;
-    }
-    if (!side) {
-      // touch/pen ou mouse fora da borda: deduz pelo lado mais próximo
-      side = nearestSide(post, e.clientX);
-    }
+    if (isMouse && requireEdgeForMouse && !side) return; // mouse só na borda
+    if (!side) side = nearestSide(post, e.clientX);
+
+    const r = post.getBoundingClientRect();
 
     const st = post.__tilt;
     st.dragging = true;
+    st.flipTriggered = false;
     st.startX = e.clientX;
+    st.centerX = r.left + r.width / 2;
     st.startAngle = st.angleTarget;          // …,-360,-180,0,180,360,…
     st.currentAngle = st.startAngle;
-    st.dirSign = (side === 'left') ? +1 : -1; // esquerda: E→D (ângulo cresce), direita: D→E (ângulo diminui)
+    st.dirSign = (side === 'left') ? +1 : -1; // esquerda = E→D; direita = D→E
     st.movedEnough = false;
+    st.localPersp = computeLocalPerspective(r.width);
 
+    // Desliga transição durante gesto e melhora UX
     post.style.transition = 'none';
+    post.style.webkitTransition = 'none';
     post.style.touchAction = 'pan-y';
+    post.style.cursor = isMouse ? 'grabbing' : '';
+
     try { post.setPointerCapture(e.pointerId); } catch {}
     e.preventDefault();
   }
@@ -134,16 +205,16 @@
     const dx = e.clientX - st.startX;
     if (!st.movedEnough && Math.abs(dx) > MOVE_THRESHOLD) st.movedEnough = true;
 
-    const rect = post.getBoundingClientRect();
-    // Progresso projetado apenas no sentido permitido (0 → 1)
-    let prog = (st.dirSign * dx) / (rect.width / 2); // meia largura = 180°
-    if (prog < 0) prog = 0;
-    if (prog > 1) prog = 1;
+    // Só dispara flip ao cruzar o centro no sentido correto
+    const crossedCenter =
+      (st.dirSign > 0 && e.clientX >= st.centerX) || // E→D
+      (st.dirSign < 0 && e.clientX <= st.centerX);   // D→E
 
-    const angle = st.startAngle + st.dirSign * (prog * ANGLE_STEP);
-    st.currentAngle = angle;
+    if (crossedCenter) {
+      triggerFlip(post, e);
+      post.style.cursor = '';
+    }
 
-    applyTransform(post);
     e.preventDefault();
   }
 
@@ -152,72 +223,67 @@
     if (!st.dragging) return;
     st.dragging = false;
 
-    // Decide se completa o meio-giro (>= 90° no sentido da borda) ou volta ao início
-    const moved = Math.abs(st.currentAngle - st.startAngle);
-    const complete = moved >= SNAP_DEG;
-    const target = complete
-      ? (st.startAngle + st.dirSign * ANGLE_STEP)
-      : st.startAngle;
-
-    st.angleTarget = target;
-
-    post.style.transition = `transform ${TRANSITION_MS}ms cubic-bezier(.4,0,.2,1)`;
-    applyTransform(post);
-
+    // Não cruzou o centro => não gira
+    post.style.cursor = '';
     try { post.releasePointerCapture(e.pointerId); } catch {}
 
-    // Se voltou a 0° e não está hovered, libere o transform inline após animar
-    setTimeout(() => {
-      if (post.__tilt && post.__tilt.angleTarget === 0 && !post.__tilt.hovered) {
-        post.style.transition = '';
-        post.style.transform = '';
-      }
-    }, TRANSITION_MS + 40);
-
+    if (st.angleTarget % 360 === 0 && !st.hovered) {
+      post.style.transition = '';
+      post.style.webkitTransition = '';
+      post.style.transform = '';
+      post.style.webkitTransform = '';
+    }
     e.preventDefault();
   }
 
   function enhancePost(post) {
     if (!post || post.__tilt) return;
 
-    // Preparar card para flip do próprio .post
+    // Prepara o card; a rotação é no próprio .post (card inteiro)
     post.classList.add('tilt-card');
-    post.style.transformOrigin = 'center center';
-    // Queremos ver o verso do card (sem conteúdo espelhado)
-    post.style.backfaceVisibility = 'visible';
     if (getComputedStyle(post).position === 'static') {
       post.style.position = 'relative';
     }
-    ensurePerspective(post);
 
-    // Criar faces: frente recebe conteúdo atual; verso vazio
+    // Faces: frente recebe conteúdo atual; verso vazio (sem espelhamento)
     const front = document.createElement('div');
     front.className = 'card-face card-front';
-
     const back = document.createElement('div');
     back.className = 'card-face card-back';
-    // Você poderá popular .card-back depois com comentários
-
     const nodes = Array.from(post.childNodes);
     nodes.forEach(n => front.appendChild(n));
     post.appendChild(front);
     post.appendChild(back);
 
+    // Estado
     post.__tilt = {
-      angleTarget: 0,      // múltiplos de 180 permitidos (…,-360,-180,0,180,360,…)
+      angleTarget: 0,      // múltiplos de 180 (…,-360,-180,0,180,360,…)
       currentAngle: 0,
       startAngle: 0,
       startX: 0,
+      centerX: 0,
       dirSign: +1,         // +1: E→D; -1: D→E
       dragging: false,
       movedEnough: false,
+      flipTriggered: false,
       hovered: false,
-      hoverScale: 1
+      hoverScale: 1,
+      localPersp: computeLocalPerspective(post.getBoundingClientRect().width)
     };
+
+    // Observa resize do próprio card para atualizar a perspectiva local
+    const ro = new ResizeObserver(() => {
+      if (post.__tilt) {
+        const w = post.getBoundingClientRect().width || post.offsetWidth || 320;
+        post.__tilt.localPersp = computeLocalPerspective(w);
+        // Reaplica transform atual para refletir novo valor
+        applyTransform(post);
+      }
+    });
+    ro.observe(post);
 
     // Eventos de gesto
     const onPointerDown = (e) => {
-      // Evita conflito com "leia mais"
       if (e.target.closest('.read-more-btn')) return;
       if (e.pointerType === 'mouse') startDrag(post, e, true);
       else startDrag(post, e, false);
@@ -230,16 +296,18 @@
     window.addEventListener('pointerup', onPointerUp, { passive: false });
     window.addEventListener('pointercancel', onPointerUp, { passive: false });
 
-    // Hover: medir scale do CSS para compor com rotateY quando na frente
+    // Hover (desktop): mede o scale do :hover para compor com o rotateY
     post.addEventListener('pointerenter', (e) => {
       if (e.pointerType !== 'mouse') return;
       post.__tilt.hovered = true;
 
-      if (post.__tilt.angleTarget === 0) {
+      if (post.__tilt.angleTarget % 360 === 0) {
         const saved = post.style.transform;
         post.style.transform = '';
+        post.style.webkitTransform = '';
         post.__tilt.hoverScale = getComputedScale(post);
         post.style.transform = saved;
+        post.style.webkitTransform = saved;
       }
       applyTransform(post);
     }, { passive: true });
@@ -248,8 +316,11 @@
       if (e.pointerType !== 'mouse') return;
       post.__tilt.hovered = false;
 
-      if (!post.__tilt.dragging && post.__tilt.angleTarget === 0) {
+      if (!post.__tilt.dragging && post.__tilt.angleTarget % 360 === 0) {
+        post.style.transition = '';
+        post.style.webkitTransition = '';
         post.style.transform = '';
+        post.style.webkitTransform = '';
         post.style.cursor = '';
       } else {
         applyTransform(post);
@@ -273,6 +344,27 @@
       }
     });
     obs.observe(document.body, { childList: true, subtree: true });
+
+    // Atualiza perspectiva local ao mudar breakpoint/orientação
+    const mq = window.matchMedia('(max-width: 600px)');
+    mq.addEventListener?.('change', () => {
+      document.querySelectorAll('.post.tilt-card').forEach(p => {
+        if (p.__tilt) {
+          const w = p.getBoundingClientRect().width || p.offsetWidth || 320;
+          p.__tilt.localPersp = computeLocalPerspective(w);
+          applyTransform(p);
+        }
+      });
+    });
+    window.addEventListener('orientationchange', () => {
+      document.querySelectorAll('.post.tilt-card').forEach(p => {
+        if (p.__tilt) {
+          const w = p.getBoundingClientRect().width || p.offsetWidth || 320;
+          p.__tilt.localPersp = computeLocalPerspective(w);
+          applyTransform(p);
+        }
+      });
+    });
   }
 
   document.addEventListener('DOMContentLoaded', initAll);
