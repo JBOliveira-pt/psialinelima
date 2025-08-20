@@ -526,7 +526,8 @@ footer {
   outline: 2px solid #b2faff;
 }
 
-/* Quando o tilt está ativo, o container .post não carrega fundo/blur/sombra */
+
+/* POSTS - TILT CARD */
 .post.tilt-card {
   background: transparent;
   backdrop-filter: none;
@@ -534,11 +535,8 @@ footer {
   box-shadow: none;
   border-left: none;
   border-right: none;
-  transform: scale(1.05);
-
+  min-width: 400px;
 }
-
-/* Transfere o visual para a face frontal quando o tilt está ativo */
 .post.tilt-card .card-front {
   border-left: 6px solid rgba(255,255,255,0.32);
   border-right: 6px solid rgba(200,220,255,0.12);
@@ -550,20 +548,16 @@ footer {
   padding: 20px;
   transition: transform 0.8s ease;
 }
-
 .post.tilt-card .card-front:hover {
   transform: scale(1.05);
   transition: transform 0.8s ease;
 }
-
-/* Se quiser que o verso mostre um “painel” limpo */
 .post.tilt-card .card-back {
   border-radius: 18px;
    border-left: 6px solid rgba(200,220,255,0.12);
   border-right: 6px solid rgba(255,255,255,0.32);
   background: rgba(255, 255, 255, 0.25);
 }
-
 .post.tilt-card .card-back h2 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.5rem;
