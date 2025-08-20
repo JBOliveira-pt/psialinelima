@@ -306,7 +306,7 @@ font-weight: 550;}
   transition: max-height 0.5s ease, opacity 0.5s ease;
   opacity: 0.95;}
 .post-content.expanded {
-  max-height: 3000px;
+  max-height: 3000px;             
   opacity: 1;}
 .post:hover{
   transform: scale(1.05);
@@ -326,7 +326,7 @@ font-weight: 550;}
   gap: 6px 4px;
   align-items:normal;
   overflow: hidden;
-  line-height: 0.9;
+  line-height: 0.9;      
   font-size: 0.85em;
   margin-top: 0;
   margin-right: 0;
@@ -482,9 +482,10 @@ font-weight: 550;}
   pointer-events: none;
   transition: opacity .2s;
   width:60%;
-  height: 95.4%;
+  height: 95.4%; 
   margin: 0 auto;
   margin-top: 2.6%;  
+  
 }
 .video-wrapper video {
   width: 100%;
@@ -495,6 +496,7 @@ font-weight: 550;}
   opacity: 0;
   pointer-events: none;
 }
+
 
 /* FOOTER */
 footer {
@@ -524,7 +526,49 @@ footer {
   outline: 2px solid #b2faff;
 }
 
+/* Quando o tilt está ativo, o container .post não carrega fundo/blur/sombra */
+.post.tilt-card {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+  border-left: none;
+  border-right: none;
+  transform: scale(1.05);
 
+}
 
+/* Transfere o visual para a face frontal quando o tilt está ativo */
+.post.tilt-card .card-front {
+  border-left: 6px solid rgba(255,255,255,0.32);
+  border-right: 6px solid rgba(200,220,255,0.12);
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 12px rgba(0,0,0,0.40);
+  backdrop-filter: blur(6px) saturate(1.2);
+  -webkit-backdrop-filter: blur(8px) saturate(1.2);
+  padding: 20px;
+  transition: transform 0.8s ease;
+}
 
+.post.tilt-card .card-front:hover {
+  transform: scale(1.05);
+  transition: transform 0.8s ease;
+}
 
+/* Se quiser que o verso mostre um “painel” limpo */
+.post.tilt-card .card-back {
+  border-radius: 18px;
+   border-left: 6px solid rgba(200,220,255,0.12);
+  border-right: 6px solid rgba(255,255,255,0.32);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.post.tilt-card .card-back h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  line-height: 110%;
+  color: #000000;
+  margin-bottom: 0px;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.492), 0 0.5px 1px rgba(0, 0, 0, 0.382);
+}
