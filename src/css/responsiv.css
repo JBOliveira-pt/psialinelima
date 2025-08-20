@@ -16,7 +16,7 @@
     display: block !important;   
     transform: none !important;   
     transition: none !important;  }
-  .post {
+  .post.tilt-card {
     display: block !important;    
     margin-bottom: 24px !important;}
 }
@@ -24,14 +24,21 @@
 @media (max-width: 600px) {
   main {
     grid-template-columns: 1fr;}
-  .post {
+  .post.tilt-card {
     margin-bottom: 20px !important;}
   header{
-  margin-right: 10px;
-  font-size:70%;}
-  .post:hover{
-    transform: scale(1);
-  }
+    margin-right: 10px;
+    font-size:70%;}
+  .post, .post.tilt-card {
+    max-width: 100% !important;
+    box-sizing: border-box;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 6px;
+    padding-right: 6px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    min-width: 300px !important;}
  .hamburger {
     position: fixed;
     top: 38px; 
@@ -50,14 +57,11 @@
     font-size: 1.9rem; }
   .menu-overlay ul {
     padding: 0 0 0 38px;}
-
   .menu-social-icons {
     flex-direction: column;
     gap: 0px;
     margin-left: 42px;
-    align-items: flex-start;
-  }
+    align-items: flex-start;}
   .menu-social-link {
-    align-items: flex-start;
-  }
+    align-items: flex-start;}
 }
