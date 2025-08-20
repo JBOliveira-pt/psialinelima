@@ -29,7 +29,7 @@
     return Math.round(Math.max(280, pxWidth) * factor);
   }
 
-  function injectCSS() {
+   function injectCSS() {
     if (document.getElementById(STYLE_ID)) return;
     const css = `
       .tilt-card {
@@ -39,23 +39,29 @@
         -webkit-transform-origin: center center;
         transform-box: border-box; /* usa a caixa do card como referência */
         will-change: transform;
-        contain: paint;
         position: relative; /* necessário p/ .card-back absoluta */
       }
+
+      /* Faces: não isole pintura (sem contain: paint) e preserve 3D */
       .tilt-card .card-face {
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
         transform-style: preserve-3d;
         -webkit-transform-style: preserve-3d;
-        will-change: transform;
-        contain: paint;
       }
+
+      /* Aplique backface-visibility em TODAS as camadas dentro das faces */
+      .tilt-card .card-face,
+      .tilt-card .card-face * {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+      }
+
       /* Frente mantém fluxo e ativa backface corretamente */
       .tilt-card .card-front {
         position: relative;
         transform: rotateY(0deg);
         -webkit-transform: rotateY(0deg);
       }
+
       /* Verso vazio, cobre toda a área quando visível (em 180°) */
       .tilt-card .card-back {
         position: absolute;
@@ -63,19 +69,6 @@
         transform: rotateY(180deg);
         -webkit-transform: rotateY(180deg);
         pointer-events: none;
-      }
-      /* Evita flicker em mídia/texto durante o 3D */
-      .tilt-card img, .tilt-card video, .tilt-card canvas {
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-      }
-      .tilt-card h1, .tilt-card h2, .tilt-card h3,
-      .tilt-card p, .tilt-card span, .tilt-card a, .tilt-card button {
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-      }
-      @media (hover:hover) and (pointer:fine) {
-        .tilt-card { cursor: default; }
       }
     `;
     const style = document.createElement('style');
