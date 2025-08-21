@@ -1,7 +1,7 @@
 // Tudo só depois que o DOM estiver pronto
 document.addEventListener('DOMContentLoaded', () => {
   // POSTS / CARROSSEL
-  const postsPerPage = 4;
+  const postsPerPage = 3;
   let currentPage = 0;
 
   const track =
@@ -138,3 +138,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
