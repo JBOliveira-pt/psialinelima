@@ -258,6 +258,13 @@
         decoding="async"
       >
     </div>
+    <div class="card-back-center">
+      <p class="card-back-text">
+        Espaço exclusivo, reservado às contribuições da comunidade sobre o conteúdo do post. 
+        </br> </br> Aqui você poderá ver comentários, likes e respostas em um só lugar.
+      </p>
+    </div>
+  </div>
     `;
     
     post.appendChild(front);
