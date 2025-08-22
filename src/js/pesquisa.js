@@ -12,7 +12,23 @@ function renderPostsPesquisa(posts, containerId) {
     if (post.imagem) {
       midia = `<img src="${post.imagem}" alt="${post.titulo}">`;
     } else if (post.video) {
-      midia = `<video autoplay loop muted playsinline src="${post.video}"></video>`;
+      midia = `
+        <div class="video-wrapper" style="position:relative; display:inline-block;">
+          <video 
+            loop 
+            muted 
+            playsinline 
+            preload="none" 
+            data-src="${post.video}" 
+            poster="${post.poster || ''}" 
+            style="width:100%; display:block; cursor:pointer;"
+            tabindex="0"
+          ></video>
+          <div class="video-overlay">
+            ▶ reproduzir vídeo
+          </div>
+        </div>
+      `;
     }
     container.innerHTML += `
       <article class="post">
@@ -230,3 +246,4 @@ window.addEventListener('resize', updatePesquisaCarousel);
 
 // Expondo função para o fetch inicial
 window.inicializaFiltroPesquisa = inicializaFiltroPesquisa;
+
