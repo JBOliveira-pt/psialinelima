@@ -245,6 +245,21 @@
     back.className = 'card-face card-back';
     const nodes = Array.from(post.childNodes);
     nodes.forEach(n => front.appendChild(n));
+
+// === ADIÇÃO: conteúdo padrão do verso ===
+    back.innerHTML = `
+    <div class="card-back-inner" aria-hidden="true">
+      <h3 class="card-back-title">Contribuições da Comunidade</h3>
+      <img 
+        src="src/images/colab-img.png" 
+        alt="Ícone de colaboração" 
+        class="card-back-logo" 
+        loading="lazy"
+        decoding="async"
+      >
+    </div>
+    `;
+    
     post.appendChild(front);
     post.appendChild(back);
 
