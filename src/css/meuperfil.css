@@ -1,0 +1,226 @@
+/* Container geral já existente */
+.container2 {
+  max-width: 950px;
+  margin: 20px auto 60px auto;
+  padding: 32px 24px 30px;
+  background: rgba(255,255,255,0.16);
+  border-radius: 24px;
+  box-shadow: 0 6px 36px 8px rgba(0,0,0,0.16);
+  backdrop-filter: blur(6px) saturate(1.2);
+  -webkit-backdrop-filter: blur(8px) saturate(1.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Perfil box */
+.box {
+  background: rgba(255,255,255,0.27);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 4px rgba(0,0,0,0.16);
+  padding: 30px 48px 24px 48px;
+  text-align: center;
+  min-width:250px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+.profile-picture-container { position: relative; margin-bottom: 10px; }
+.profile-picture {
+  width: 130px; height: 130px; object-fit: cover; border-radius: 50%;
+  box-shadow: 0 2px 15px 0 rgba(0,0,0,0.14); background: #f6f6f6; transition: box-shadow .3s, transform .3s; border:none !important;
+}
+.profile-picture:hover { box-shadow: 0 5px 22px 2px #b2faffc7, 0 2px 15px 0 rgba(0,0,0,0.21); transform: scale(1.05); }
+.edit-foto-btn {
+  display:none; position:absolute; bottom:10px; right:10px; width:30px; height:30px;
+  border-radius:50%; background:#0500007f; border:none; box-shadow:0 2px 6px rgba(0,0,0,0.12);
+  align-items:center; justify-content:center; padding:0; cursor:pointer;
+}
+.edit-foto-btn.show { display:flex; }
+
+.box h4 {
+  font-family:'Space Grotesk', Arial, sans-serif;
+  font-size:1.4rem; font-weight:700; color:#191919;
+  margin-top:6px; margin-bottom:2px;
+  text-shadow: 0 1px 3px rgba(255,255,255,0.42), 0 .5px 1px rgba(0,0,0,0.16);
+}
+.texto-cargo { font-size:1.02rem; color:#33394d; font-weight:600; margin-bottom:3px; }
+.box p { font-size:0.95rem; color:#2d2c2cca; font-weight:600; margin:0; }
+
+.profile-sections-wrapper {
+  display:flex; flex-direction:column; align-items:flex-start; width:100%; gap:20px;
+}
+.profile-sections-wrapper > * { width:100%; max-width:820px; padding:0 10px; }
+.profile-sections-wrapper h5 {
+  font-size:1.28rem; font-family:'Space Grotesk', Arial, sans-serif; font-weight:600; color:#111; margin-bottom:9px; letter-spacing:.02em; 
+  margin-bottom: 30px !important;
+}
+
+/* Sobre mim */
+.form-group-about { 
+  width:100%; 
+  min-width:520px; 
+  margin:18px 0 22px 0; 
+}
+.bordaaboutme {
+  background:rgba(255,255,255,0.38); border-radius:10px; min-width:460px;
+  min-height:100px; padding:12px 14px; font-size:1rem; color:#1b1b1b;
+  font-family:'Work Sans', Arial, sans-serif; margin-bottom:4px; resize:vertical; margin-left: 78px;
+  transition:border-color .2s; text-align:justify !important; white-space:normal; overflow:auto;
+}
+.bordaaboutme:focus { outline:2px solid #b2faff; }
+.aboutme-actions { text-align:right; margin-top:10px; }
+.edit-btn {
+  background:transparent; color:#ffffff89; border:none; border-radius:22px; padding:5px 12px;
+  font-size:.85rem; font-family:'Space Grotesk', Arial, sans-serif; font-weight:600; cursor:pointer;
+  transition:.3s; text-shadow:0 1px 3px rgba(5,4,4,.225), 0 .5px 1px rgba(0,0,0,.088);
+}
+.edit-btn:hover { color:#000000a7; transform:scale(1.09); }
+.aboutme-edit { display:none; margin-top:8px; }
+.aboutme-edit-actions { text-align:right; margin-top:8px; gap:10px; display:flex; justify-content:flex-end; }
+.cancel-btn, .save-btn {
+  font-family:'Space Grotesk', Arial, sans-serif; font-weight:600;
+  border-radius:8px; padding:4px 9px; font-size:.96rem;
+  border:none; cursor:pointer; background:#00000020; color:#000;
+  box-shadow:0 1px 6px #0002; transition:background .25s, color .2s;
+}
+.cancel-btn:hover, .save-btn:hover { background:#ffffff77; }
+
+/* Interesses */
+.interesses-pills-wrapper { display:flex; flex-wrap:wrap; gap:15px; align-items:center; margin-bottom:7px;margin-left: 78px;}
+.interesse-pill {
+  position:relative; background:linear-gradient(90deg,#0000003e 0%,#ffffff78 100%);
+  color:#222; font-size:.95rem; font-family:'Space Grotesk', Arial, sans-serif;
+  border-radius:22px; padding:5px 16px 5px 14px; box-shadow:0 1px 6px #0001;
+  font-weight:600; display:inline-block; margin-bottom:3px; user-select:none;
+  transition:background .2s; padding-right:26px; 
+}
+.remove-pill {
+  position:absolute; top:2px; right:6px; border:none; background:none;
+  color:#4f4f4f74; font-size:1.05em; cursor:pointer; width:18px; height:18px;
+  border-radius:50%; transition:background .16s, color .16s;
+}
+.remove-pill:hover { color:rgba(255,255,255,.805); }
+.btn-add-interesse {
+  background:transparent; color:#ffffff89; border:none; border-radius:22px;
+  padding:5px 16px 5px 14px; font-size:.95rem; font-family:'Space Grotesk', Arial, sans-serif;
+  font-weight:600; cursor:pointer; transition:.3s;
+  text-shadow:0 1px 3px rgba(5,4,4,.225), 0 .5px 1px rgba(0,0,0,.088);
+}
+.btn-add-interesse:hover { color:#000000c8; transform:scale(1.07); }
+.add-interesse-popover {
+  display:none; position:absolute; margin-top:10px; left:0; z-index:40;
+  background:#fff; border-radius:12px; box-shadow:0 3px 16px #0002;
+  padding:15px 18px 8px 18px; min-width:210px; animation:fadeIn .18s;
+}
+.add-interesse-popover select { font-size:1rem; margin-bottom:8px; width:100%; }
+.add-interesse-popover .cancel-btn {
+  background:#b2faff2e; font-size:.9rem; padding:3px 10px; margin-top:6px !important;
+}
+.add-interesse-popover .cancel-btn:hover { background:#0000002e; color:#fffbfb !important; }
+@keyframes fadeIn { from{opacity:0; transform:translateY(18px);} to{opacity:1; transform:translateY(0);} }
+
+/* Modal foto perfil (reutilizado do seu código original, pequenos ajustes) */
+.custom-modal-overlay {
+  position:fixed; inset:0; z-index:10000; background:rgba(0,0,0,0.64);
+  display:none; align-items:center; justify-content:center; transition:opacity .25s;
+}
+.custom-modal-overlay.open { display:flex; }
+.custom-modal-content {
+  background:#ffffffd7; border-radius:18px; box-shadow:0 8px 32px 12px rgba(0,0,0,0.30);
+  padding:0 2vw 16px 2vw; min-width:350px; max-width:20vw; animation:popupFadeIn .25s;
+  display:flex; flex-direction:column; gap:10px; align-items: center;
+}
+.custom-modal-content .close-btn:hover{
+  border-radius: 20% !important;
+}
+.custom-modal-title{
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 12px !important;
+  text-align: center;
+}
+.custom-modal-footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  gap: 22px;
+}
+.modal-input {
+  text-align: center;
+}
+
+
+@keyframes popupFadeIn { from{transform:scale(.92) translateY(40px); opacity:.2;} to{transform:scale(1) translateY(0); opacity:1;} }
+.close-btn {
+  padding:.25em; background:transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 16 16'%3e%3cpath d='M2.146 2.146a.5.5 0 0 1 .708 0L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") center/1em no-repeat;
+  border:none; cursor:pointer; width:1.6em; height:1.6em; opacity:.65; align-self:flex-end; margin-right:-22px; margin-top:10px;
+}
+.close-btn:hover { opacity:1; background-color:#eee; }
+.profile-picture-modal, #preview {
+  border-radius:50%; background:#f6f6f6; box-shadow:0 2px 8px #0002;
+  width:200px; height:220px; margin-bottom:20px; object-fit:cover;
+}
+.modal-center { display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.form-label { margin-bottom:8px; text-align:center; }
+
+/* === CARROSSEL FAVORITOS === */
+.favoritos-carousel {
+  margin-top: 4px;
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+}
+.favoritos-carousel .carousel-btn {
+  /* Botões menores no contexto do perfil */
+  width:42px;
+  height:42px;
+  font-size:1.6rem;
+  background:#000; color:#fff;
+  opacity:0.75;
+  right: -91px;
+}
+.favoritos-carousel .carousel-btn[disabled] { visibility:hidden; }
+.carousel-viewport {
+  overflow:hidden;
+  width:110%;
+  border-radius: 2%;
+}
+
+@media (max-width: 820px) {
+  .favoritos .carousel-track .post { min-width: 48%; flex:0 0 48%; }
+}
+@media (max-width: 560px) {
+  .favoritos .carousel-track .post { min-width: 96%; flex:0 0 96%; margin:0 2%; }
+  .carousel-viewport {
+  overflow:hidden;
+  width:120%;
+  border-radius: 2%;
+  margin-left: -28px;
+}
+.interesses-pills-wrapper{
+  margin-left: -14px;
+}
+.form-group-about {
+    min-width: 0;
+    width: 100vw;   
+    max-width: 100vw;
+    margin-left: 0vw;  
+    padding: 0;
+  }
+  .bordaaboutme {
+    min-width: 0;
+    width: 80vw !important; 
+    max-width: 100vw;
+    margin-left: 0 !important;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: .97rem;
+  }
+  .aboutme-edit-actions{
+    display: flex;
+    justify-content: flex-start;
+  }
+}
