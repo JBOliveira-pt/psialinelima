@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu Perfil</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/sobre.css">
+  <link rel="stylesheet" href="src/css/responsiv.css">
+  <link rel="stylesheet" href="src/css/meuperfil.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="filme-bg" id="filme-bg"></div>
+  
+<!-- HEADER -->
+  <header>
+    <h1>P<small>S</small><small class="small-two"> i</small> Aline Lima</h1>
+  </header>
+
+<!-- MENU HAMBURGER -->
+  <button class="hamburger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-overlay">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <nav id="menu-overlay" class="menu-overlay" aria-hidden="true">
+    <ul>
+      <li><a href="../">Home</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="pesquisa.html">Pesquisa</a></li>
+    </ul>
+    <div class="menu-social-icons">
+      <a class="menu-social-link" href="https://www.instagram.com/psi_alinelima_/" target="_blank" rel="noopener">
+        <img class="menu-social-icon-img" src="src/images/insta-img.png" alt="Instagram"/>
+        <span class="menu-social-label">meu Insta</span>
+      </a>
+      <a class="menu-social-link" href="https://www.threads.com/@psi_alinelima_" target="_blank" rel="noopener">
+        <img class="menu-social-icon-img" src="src/images/threads-img.png" alt="Threads"/>
+        <span class="menu-social-label">meu Threads</span>
+      </a>
+    </div>
+  </nav>
+
+<!-- PERFIL -->
+  <div class="container2">
+
+    <div class="box position-relative">
+      <div class="profile-picture-container custom-profile-picture-container">
+        <img src="src/images/jessicafake-img.png"
+             class="profile-picture" alt="Profile Picture" />
+        <button type="button" id="btnEditarFoto"
+          class="edit-foto-btn"
+          title="Editar foto">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="30" fill="#fff" viewBox="0 0 20 20">
+            <path d="M15.7 2.29a1 1 0 0 1 1.41 0l.6.6a1 1 0 0 1 0 1.41l-1.22 1.22-2-2 1.21-1.23zm-2.12 2.12l2 2-9.19 9.19a1.01 1.01 0 0 1-.38.24l-3.01 1a1 1 0 0 1-1.27-1.27l1-3.01a1.01 1.01 0 0 1 .24-.38l9.19-9.19zm-8.25 8.96l-.59 1.78 1.78-.59 8.09-8.09-1.19-1.19-8.09 8.09z"/>
+          </svg>
+        </button>
+      </div>
+      <h4>Jéssica Tavares</h4>
+      <p>Psicóloga</p>
+      <p>Educação Infantil</p>
+    </div>
+
+    <!-- Agrupamento das 3 seções em um flex-column alinhado à esquerda -->
+    <div class="profile-sections-wrapper">
+      <div class="form-group-about">
+        <div class="about-header">
+          <h5>Sobre mim</h5>
+        </div>
+      <div id="viewMode">
+        <div class="bordaaboutme aboutme-view">
+            <p id="aboutMeText">Olá, sou Jéssica! Tenho 32 anos e sou apaixonada por autoconhecimento e bem-estar emocional. Trabalho com educação infantil em Setúbal e sou mãe de uma menininha encantadora de 4 anos. Sigo a Aline porque valorizo sua abordagem empática e fundamentada, além de adorar sua visão única sobre as obras cinematográficas que assiste!</p>
+            <div class="aboutme-actions">
+              <button id="editAboutBtn" class="edit-btn" type="button">Editar</button>
+            </div>
+        </div>
+      </div>
+        <div id="editMode" class="aboutme-edit" style="display:none;">
+          <textarea id="aboutMeInput" class="bordaaboutme" rows="6"></textarea>
+          <div class="aboutme-edit-actions">
+            <button id="cancelEditAbout" class="cancel-btn" type="button">Cancelar</button>
+            <button id="saveEditAbout" class="save-btn" type="button">Salvar</button>
+          </div>
+      </div>
+    </div>
+
+      <div class="interesses">
+    <h5>Interesses</h5>
+    <div class="interesses-pills-wrapper">
+      <span class="interesse-pill">Cinema Autoral<button class="remove-pill" title="Remover interesse" aria-label="Remover interesse">&times;</button>
+</span>
+      <span class="interesse-pill">Música<button class="remove-pill" title="Remover interesse" aria-label="Remover interesse">&times;</button>
+</span>
+      <span class="interesse-pill">Educação Infantil<button class="remove-pill" title="Remover interesse" aria-label="Remover interesse">&times;</button>
+</span>
+      <span class="interesse-pill">Literatura<button class="remove-pill" title="Remover interesse" aria-label="Remover interesse">&times;</button>
+</span>
+      <span class="interesse-pill">Séries de Comédia<button class="remove-pill" title="Remover interesse" aria-label="Remover interesse">&times;</button>
+</span>
+      <button id="addInteresseBtn" class="btn-add-interesse" type="button">+ Interesses</button>
+    </div>
+    <!-- Popover/modal simples para seleção de mais interesses -->
+    <div id="addInteressePopover" class="add-interesse-popover">
+      <select id="interestFilterPopover">
+        <option value="" disabled hidden selected>Adicionar interesse...</option>
+        <option value="hollywood">Cinema Hollywoodiano</option>
+        <option value="cinema-nacional">Cinema Nacional</option>
+        <option value="cinema-autoral">Cinema Autoral</option>
+        <option value="series-drama">Séries de Drama</option>
+        <option value="series-comedia">Séries de Comédia</option>
+        <option value="literatura">Literatura</option>
+        <option value="musica">Música</option>
+        <option value="arte">Arte</option>
+        <option value="tecnologia">Tecnologia</option> 
+        <option value="educacao-infantil">Educação Infantil</option>
+      </select>
+      <button id="closePopoverBtn" class="cancel-btn" type="button">Fechar</button>
+    </div>
+  </div>
+
+      <!-- FAVORITOS (CARROSSEL) -->
+      <div class="favoritos">
+        <h5>Posts Favoritos</h5>
+        <div class="carousel-container favoritos-carousel">
+          <button class="carousel-btn carousel-btn-left" id="favPrevBtn" aria-label="Anterior">&#9664;</button>
+          <!-- Viewport (opcional para clipping aprimorado) -->
+          <div class="carousel-viewport" id="favViewport">
+            <div class="carousel-track" id="favCarouselTrack"></div>
+          </div>
+          <button class="carousel-btn carousel-btn-right" id="favNextBtn" aria-label="Próximo">&#9654;</button>
+        </div>
+      </div>
+      
+    </div> <!-- FIM flex wrapper -->
+
+  </div>
+
+<!-- POP-UP CUSTOMIZADO -->
+  <div id="popupModal" class="custom-modal-overlay">
+    <div class="custom-modal-content">
+      <button class="close-btn" id="closePopup" aria-label="Close"></button>
+      <div class="custom-modal-header">
+        <span class="custom-modal-title">Alterar foto de perfil</span>
+      </div>
+      <div class="custom-modal-body">
+        <form action="#" method="post" enctype="multipart/form-data" id="pictureForm">
+          <div class="modal-center">
+            <img id="preview"
+                 src="src/images/jessicafake-img.png"
+                 class="profile-picture-modal">
+          </div>
+          <div class="modal-input">
+            <label for="profileImage" class="form-label">Carregue uma nova foto de perfil</label>
+            <input type="file" id="profileImage" name="profileImage" accept="image/*">
+          </div>
+        </form>
+      </div>
+      <div class="custom-modal-footer">
+        <button type="button" class="cancel-btn" id="cancelPopup">Cancelar</button>
+        <button type="button" class="save-btn" id="savePopup">Salvar</button>
+      </div>
+    </div>
+  </div>
+
+<!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 - Todos os direitos reservados</p>
+  </footer>
+
+<!-- SCRIPTS -->
+  <script src="src/js/script.js"></script>
+  <script src="src/js/backgroud.js"></script>
+  <script src="src/js/meuperfil.js"></script>
+  <script src="src/js/tilt-cards.js"></script>
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
+</body>
+</html>
