@@ -19,6 +19,26 @@
   .post.tilt-card {
     display: block !important;    
     margin-bottom: 24px !important;}
+  
+ .menu-overlay{
+  width: fit-content;
+ }
+
+    .menu-overlay .submenu-toggle{
+    font-size: 1.9rem;
+    font-weight: 550;
+    font-family: 'Space Grotesk', 'Work Sans', Arial, sans-serif;
+    margin-top: 0px !important;
+    padding-top: 5px;
+  } 
+    .menu-overlay .submenu {
+    margin-left: 0;
+    padding-left: 12px;
+  }
+  .menu-overlay .submenu a {
+    font-size: 1.02rem;
+    padding-left: 8px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -58,10 +78,6 @@
   .menu-overlay ul {
     padding: 0 0 0 38px;}
   .menu-social-icons {
-    flex-direction: column;
-    gap: 0px;
-    margin-left: 42px;
-    align-items: flex-start;}
-  .menu-social-link {
-    align-items: flex-start;}
+    gap: 12px;
+    margin-left: 40px;}
 }
