@@ -137,5 +137,17 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+   // SUBMENU "Comunidade"
+  document.querySelectorAll('.has-submenu .submenu-toggle').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const li = this.closest('.has-submenu');
+      const open = li.classList.toggle('open');
+      this.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+  
 });
+
 
