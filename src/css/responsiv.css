@@ -21,7 +21,7 @@
     margin-bottom: 24px !important;}
   
  .menu-overlay{
-  width: fit-content;
+  width: 280px;
  }
 
     .menu-overlay .submenu-toggle{
@@ -81,3 +81,4 @@
     gap: 12px;
     margin-left: 40px;}
 }
+
