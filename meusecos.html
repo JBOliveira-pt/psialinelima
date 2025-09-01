@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meus Ecos</title>
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="stylesheet" href="src/css/meusecos.css" />
+  <link rel="stylesheet" href="src/css/responsiv.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+ <div class="filme-bg" id="filme-bg"></div>
+
+  <!-- HEADER -->
+  <header>
+    <h1>P<small>S</small><small class="small-two"> i</small> Aline Lima</h1>
+  </header>
+
+<!-- MENU HAMBURGER -->
+  <button class="hamburger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-overlay">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <nav id="menu-overlay" class="menu-overlay" aria-hidden="true">
+    <ul>
+      <li><a href="../">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="pesquisa.html">Pesquisa</a></li>
+      <li class="has-submenu">
+      <button class="submenu-toggle" aria-expanded="false">Comunidade</button>
+      <ul class="submenu">
+        <li><a href="meuperfil.html">Meu Perfil</a></li>
+      </ul>
+    </li>
+  </ul>
+    </ul>
+    <div class="menu-social-icons">
+      <a class="menu-social-link" href="https://www.instagram.com/psi_alinelima_/" target="_blank" rel="noopener">
+        <img class="menu-social-icon-img" src="src/images/insta-img.png" alt="Instagram"/>
+        <span class="menu-social-label">Instagram</span>
+      </a>
+      <a class="menu-social-link" href="https://www.threads.com/@psi_alinelima_" target="_blank" rel="noopener">
+        <img class="menu-social-icon-img" src="src/images/threads-img.png" alt="Threads"/>
+        <span class="menu-social-label">Threads</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    
+    <section class="filtros-wrapper" id="filtros">
+      <div>
+        <label for="busca">Buscar</label>
+        <input type="text" id="busca" placeholder="Nome, interesse, post favorito, etc." />
+      </div>
+      <div>
+        <label for="filtroOcupacao">Ocupação</label>
+        <select id="filtroOcupacao">
+          <option value="">Todas</option>
+        </select>
+      </div>
+      <div>
+        <label for="filtroEspecialidade">Especialidade</label>
+        <select id="filtroEspecialidade">
+          <option value="">Todas</option>
+        </select>
+      </div>
+      <div>
+        <label for="minAfinidade">Afinidade mínima (%)</label>
+        <div id="afinidade-slider-container" style="display: flex; align-items: center; gap: 0.8em;">
+          <input 
+            type="range" 
+            id="minAfinidade" 
+            min="0" 
+            max="100" 
+            step="5" 
+            value="0" 
+            style="flex:1;"
+          />
+          <span id="minAfinidade-value" style="min-width:40px;text-align:left;">0%</span>
+        </div>
+      </div>
+      <div>
+        <label>&nbsp;</label>
+        <button id="btnLimpar" type="button">Limpar filtros</button>
+      </div>
+    </section>
+
+    <div class="opcoes-ordenacao">
+      <button data-ordem="afinidade" class="ativo" type="button">Ordenar por Afinidade</button>
+      <button data-ordem="nome" type="button">Ordenar por Nome</button>
+      <button data-ordem="ocupacao" type="button">Ordenar por Ocupação</button>
+    </div>
+
+    <section class="grid-cards" id="ecosGrid" aria-live="polite"></section>
+    <div class="estado-vazio" id="estadoVazio" hidden>Nenhum resultado para os filtros atuais.</div>
+  </main>
+
+  <template id="tplCard">
+    <article class="eco-card" data-color="">
+      <div class="card-header">
+        <img class="foto" src="" alt="Foto do perfil">
+        <div>
+          <h2></h2>
+          <div class="tag-linha ocupacao"></div>
+          <div class="tag-linha especialidade"></div>
+        </div>
+      </div>
+      <div class="chips interesses-chips"></div>
+      <div class="afinidade-wrapper">
+        <div class="afinidade-bar"><span></span></div>
+        <div class="afinidade-score"></div>
+      </div>
+      <div class="secao-interesses"></div>
+      <div class="secao-posts"></div>
+      <footer>
+        <a class="btn-perfil" href="#" target="_blank" rel="noopener">Ver Perfil</a>
+      </footer>
+    </article>
+  </template>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="src/js/script.js"></script>
+  <script src="src/js/background.js"></script>
+  <script src="src/js/meuperfil.js"></script>
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script src="src/js/meusecos.js"></script>
+</body>
+</html>
