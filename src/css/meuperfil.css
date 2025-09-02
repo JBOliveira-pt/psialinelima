@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box; /* garantia */
 }
 
 /* Perfil box */
@@ -120,7 +121,7 @@
 .add-interesse-popover .cancel-btn:hover { background:#0000002e; color:#fffbfb !important; }
 @keyframes fadeIn { from{opacity:0; transform:translateY(18px);} to{opacity:1; transform:translateY(0);} }
 
-/* Modal foto perfil (reutilizado do seu código original, pequenos ajustes) */
+/* Modal foto perfil */
 .custom-modal-overlay {
   position:fixed; inset:0; z-index:10000; background:rgba(0,0,0,0.64);
   display:none; align-items:center; justify-content:center; transition:opacity .25s;
@@ -130,6 +131,7 @@
   background:#ffffffd7; border-radius:18px; box-shadow:0 8px 32px 12px rgba(0,0,0,0.30);
   padding:0 2vw 16px 2vw; min-width:350px; max-width:20vw; animation:popupFadeIn .25s;
   display:flex; flex-direction:column; gap:10px; align-items: center;
+  box-sizing: border-box;
 }
 .custom-modal-content .close-btn:hover{
   border-radius: 20% !important;
@@ -150,11 +152,10 @@
   text-align: center;
 }
 
-
 @keyframes popupFadeIn { from{transform:scale(.92) translateY(40px); opacity:.2;} to{transform:scale(1) translateY(0); opacity:1;} }
 .close-btn {
   padding:.25em; background:transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 16 16'%3e%3cpath d='M2.146 2.146a.5.5 0 0 1 .708 0L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") center/1em no-repeat;
-  border:none; cursor:pointer; width:1.6em; height:1.6em; opacity:.65; align-self:flex-end; margin-right:-22px; margin-top:10px;
+  border:none; cursor:pointer; width:1.6em; height:1.6em; opacity:.65; align-self:flex-end; margin-right:0px; margin-top:10px;
 }
 .close-btn:hover { opacity:1; background-color:#eee; }
 .profile-picture-modal, #preview {
@@ -172,7 +173,6 @@
   padding: 10px 0;
 }
 .favoritos-carousel .carousel-btn {
-  /* Botões menores no contexto do perfil */
   width:42px;
   height:42px;
   font-size:1.6rem;
@@ -193,15 +193,15 @@
 @media (max-width: 560px) {
   .favoritos .carousel-track .post { min-width: 96%; flex:0 0 96%; margin:0 2%; }
   .carousel-viewport {
-  overflow:hidden;
-  width:120%;
-  border-radius: 2%;
-  margin-left: -28px;
-}
-.interesses-pills-wrapper{
-  margin-left: -14px;
-}
-.form-group-about {
+    overflow:hidden;
+    width:120%;
+    border-radius: 2%;
+    margin-left: -28px;
+  }
+  .interesses-pills-wrapper{
+    margin-left: -14px;
+  }
+  .form-group-about {
     min-width: 0;
     width: 100vw;   
     max-width: 100vw;
@@ -222,5 +222,98 @@
   .aboutme-edit-actions{
     display: flex;
     justify-content: flex-start;
+  }
+}
+
+/* =========================
+   NOVO BLOCO DE CORREÇÕES
+   ========================= */
+@media (max-width: 600px) {
+  /* FIX MOBILE: impedir que elementos internos excedam a largura útil */
+  body, html {
+    max-width: 100%;
+  }
+  .container2 {
+    width: 100%;
+    max-width: 100%;
+    padding: 28px 16px 30px;
+  }
+  /* Substitui larguras em vw por % relativas ao contêiner */
+  .form-group-about {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+  }
+  .bordaaboutme {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .interesses-pills-wrapper {
+    margin-left: 0 !important;
+    padding-left: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  /* Carrossel: remover largura >100% e margens negativas */
+  .carousel-viewport {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .favoritos-carousel .carousel-btn {
+    /* Reposiciona dentro da área visível */
+    right: 8px;
+  }
+  /* Se quiser ocultar botões no mobile (opcional):
+     .favoritos-carousel .carousel-btn { display:none; } */
+
+  /* Evita que o conteúdo do card gere overflow lateral */
+  .favoritos .carousel-track .post {
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  /* Modal: tornar fluido sem forçar min-width maior que viewport */
+  .custom-modal-content {
+    min-width: 0 !important;
+    max-width: 92vw !important;
+    width: 92vw !important;
+    padding: 12px 16px 22px !important;
+  }
+
+  /* Garantir que nada dependa de vw excedendo a viewport */
+  .profile-sections-wrapper > * {
+    padding: 0 0 !important;
+    max-width: 100% !important;
+  }
+}
+
+/* (Se quiser alvo ainda menor que 480px) */
+@media (max-width: 400px) {
+  .container2 {
+    padding: 24px 12px 26px;
+  }
+  .custom-modal-content {
+    max-width: 94vw !important;
+    width: 94vw !important;
+  }
+}
+
+
+/* Fix persistente do botão hambúrguer no perfil */
+.hamburger {
+  position: fixed !important;
+  top: calc(env(safe-area-inset-top, 0px) + 40px) !important;
+  left: 40px !important;
+  z-index: 400 !important;
+}
+@media (max-width:600px) {
+  .hamburger {
+    top: calc(env(safe-area-inset-top, 0px) + 32px) !important;
+    left: 28px !important;
   }
 }
