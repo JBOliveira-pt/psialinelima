@@ -217,9 +217,6 @@ function renderCards(lista) {
     card.querySelector('.secao-posts').innerHTML =
       '<strong>Posts fav.:</strong> ' + (item.postsFavoritos || []).slice(0, 5).join(', ');
 
-    const linkPerfil = card.querySelector('.btn-perfil');
-    linkPerfil.href = item.link || '#';
-
     grid.appendChild(card);
   });
 }
