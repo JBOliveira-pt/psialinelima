@@ -337,8 +337,7 @@ main {
   -webkit-backdrop-filter: blur(8px) saturate(1.2);
   padding: 20px;
   color: #222; 
-  transition: background 0.3s;
-  transition: transform 0.8s ease;}
+  transition: background 0.3s, transform 0.8s ease;}
 .post h2 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.5rem;
@@ -693,4 +692,10 @@ footer {
   max-width: 94%;
   margin: 0;
   text-wrap: balance;
+}
+
+/* Posts marcados como no-tilt nunca recebem transform de hover, mesmo em desktop */
+.post.no-tilt:hover,
+.post.no-tilt .card-front:hover {
+  transform: none !important;
 }
