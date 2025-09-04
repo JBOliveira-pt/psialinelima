@@ -1,6 +1,3 @@
-// meuperfil.js
-// Script principal da página de perfil: foto, edição de "Sobre mim", interesses e carrossel de favoritos.
-
 document.addEventListener("DOMContentLoaded", () => {
   // -------------------------------------------------
   // FOTO DE PERFIL (POPUP)
@@ -339,6 +336,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const favoritos = posts.filter(p => FAVORITE_TITLES.includes(p.titulo));
   renderPosts(favoritos, 'favCarouselTrack');
 
+   /* Marca posts favoritos para não receber tilt/scale */
+  document.querySelectorAll('#favCarouselTrack .post').forEach(p => {
+    p.classList.add('no-tilt');
+  });
+
   // -------------------------------------------------
   // Vídeos (Reproduzir on hover/click - compatível com padrão)
   // -------------------------------------------------
@@ -359,19 +361,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   document.body.addEventListener('mouseover', handleVideoEvent, true);
   document.body.addEventListener('click', handleVideoEvent, true);
-
-  // -------------------------------------------------
-  // Botão "ler mais" sem ser aplicado
-  // -------------------------------------------------
-  //document.addEventListener('click', (e) => {
-  //  const btn = e.target.closest('.read-more-btn');
-  //  if (!btn) return;
-  //  const post = btn.closest('.post');
-  //  if (!post) return;
-  //  const content = post.querySelector('.post-content');
-  //  btn.classList.toggle('expanded');
-  //  content.classList.toggle('expanded');
-  // });
 
   // -------------------------------------------------
   // CARROSSEL FAVORITOS (Estilo index + avanço de até 3 posts)
@@ -398,9 +387,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const viewport = document.getElementById('favViewport');
     const { cardWidth } = getCardMetrics();
     if (!cardWidth) return 1;
+    if (window.innerWidth >= 1024) {
+      return 3;
+    }
     const vw = viewport.getBoundingClientRect().width;
     // arredonda para baixo
     return Math.max(1, Math.floor(vw / cardWidth));
+    
   }
 
   function updateButtons() {
@@ -475,4 +468,3 @@ document.addEventListener("DOMContentLoaded", () => {
     loadMembers();
   }
 });
-
