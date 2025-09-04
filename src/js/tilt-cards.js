@@ -1,10 +1,3 @@
-// Flip 3D do card inteiro (.post) com direção vinculada à borda "pegada"
-// Correções p/ mobile: perspectiva local (transform: perspective()), eixo central estável
-// - Mouse: cursor "grab" nas bordas; só gira ao arrastar e cruzar o centro
-// - Touch/pen: deduz borda pelo lado tocado; só gira ao cruzar o centro
-// - Cada gesto adiciona 180° no sentido da borda (E→D pela esquerda, D→E pela direita), infinitamente
-// - Mantém o scale do :hover compondo com rotateY
-// - Verso vazio (sem espelhamento da frente)
 (function () {
   const STYLE_ID = 'tilt-cards-style';
   const ANGLE_STEP = 180;         // cada gesto vira 180°
@@ -245,8 +238,8 @@
     back.className = 'card-face card-back';
     const nodes = Array.from(post.childNodes);
     nodes.forEach(n => front.appendChild(n));
-
-// === ADIÇÃO: conteúdo padrão do verso ===
+    
+     // === ADIÇÃO: conteúdo padrão do verso ===
     back.innerHTML = `
     <div class="card-back-inner" aria-hidden="true">
       <h3 class="card-back-title">Contribuições da Comunidade</h3>
@@ -266,7 +259,7 @@
     </div>
   </div>
     `;
-    
+
     post.appendChild(front);
     post.appendChild(back);
 
@@ -346,7 +339,7 @@
 
   function initAll() {
     injectCSS();
-    document.querySelectorAll('.post').forEach(enhancePost);
+    document.querySelectorAll('.post:not(.no-tilt)').forEach(enhancePost);
 
     // Observa posts dinâmicos (home/pesquisa)
     const obs = new MutationObserver((muts) => {
