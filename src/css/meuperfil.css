@@ -492,3 +492,114 @@
   from { opacity: 0; transform: translateY(18px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+/* === INTERESSES + REDES SOCIAIS (layout combinado) === */
+.interesses-social-row {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Mantém a semântica existente da seção de interesses */
+.interesses,
+.social-links {
+  position: relative;
+}
+
+/* Para alinhar visualmente com o estilo existente (usa o h5 global) */
+.social-links h5 {
+  margin-bottom: 18px;
+}
+
+/* Ícones sociais */
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  align-items: center;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.social-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px 14px;
+  position: relative;
+  transition: transform .28s;
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus-visible {
+  transform: translateY(-2px) scale(1.04);
+  outline: none;
+}
+
+.social-icon-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.18));
+  transition: transform .3s;
+}
+
+.social-icon-link:hover .social-icon-img,
+.social-icon-link:focus-visible .social-icon-img {
+  transform: scale(1.08);
+}
+
+/* Texto somente para leitores de tela */
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Desktop: lado a lado (Interesses 2/3 – Redes 1/3) */
+@media (min-width: 900px) {
+  .interesses-social-row {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .interesses {
+    flex: 0 0 66.666%;
+    max-width: 66.666%;
+  }
+
+  .social-links {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+
+  /* Para manter o recuo esquerdo dos conteúdos igual aos pills (78px) */
+  .social-links .social-icons {
+    margin-left: -10px;
+  }
+}
+
+/* Ajuste fino em telas muito largas (opcional) */
+@media (min-width: 1400px) {
+  .interesses-social-row {
+    gap: 56px;
+  }
+}
+
+/* Mobile já fica empilhado naturalmente. Se quiser aumentar o toque nos ícones: */
+@media (max-width: 600px) {
+  .social-icon-link {
+    padding: 8px 10px;
+  }
+  .social-icon-img {
+    width: 44px;
+    height: 44px;
+  }
+}
