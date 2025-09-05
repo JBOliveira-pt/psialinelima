@@ -27,7 +27,7 @@
   </button>
   <nav id="menu-overlay" class="menu-overlay" aria-hidden="true">
     <ul>
-       <li><a href="/psialinelima/">Home</a></li>
+      <li><a href="../">Home</a></li>
       <li><a href="sobre.html">Sobre</a></li>
       <li><a href="contato.html">Contato</a></li>
       <li><a href="pesquisa.html">Pesquisa</a></li>
@@ -37,6 +37,7 @@
         <li><a href="meusecos.html">Meus Ecos</a></li>  
       </ul>
     </li>
+  </ul>
     </ul>
     <div class="menu-social-icons">
       <a class="menu-social-link" href="https://www.instagram.com/psi_alinelima_/" target="_blank" rel="noopener">
@@ -93,39 +94,53 @@
       </div>
     </div>
 
-      <div class="interesses">
-    <h5>Interesses</h5>
-    <div class="interesses-pills-wrapper">
-      <span class="interesse-pill">Cinema Autoral<button class="remove-pill" title="Remover interesse" aria-label="Remover interesse">&times;</button>
-</span>
-      <span class="interesse-pill">Música<button class="remove-pill" title="Remover interesse" aria-label="Remover interesse">&times;</button>
-</span>
-      <span class="interesse-pill">Educação Infantil<button class="remove-pill" title="Remover interesse" aria-label="Remover interesse">&times;</button>
-</span>
-      <span class="interesse-pill">Literatura<button class="remove-pill" title="Remover interesse" aria-label="Remover interesse">&times;</button>
-</span>
-      <span class="interesse-pill">Séries de Comédia<button class="remove-pill" title="Remover interesse" aria-label="Remover interesse">&times;</button>
-</span>
-      <button id="addInteresseBtn" class="btn-add-interesse" type="button">+ Interesses</button>
-    </div>
-    <!-- Popover/modal simples para seleção de mais interesses -->
-    <div id="addInteressePopover" class="add-interesse-popover">
-      <select id="interestFilterPopover">
-        <option value="" disabled hidden selected>Adicionar interesse...</option>
-        <option value="hollywood">Cinema Hollywoodiano</option>
-        <option value="cinema-nacional">Cinema Nacional</option>
-        <option value="cinema-autoral">Cinema Autoral</option>
-        <option value="series-drama">Séries de Drama</option>
-        <option value="series-comedia">Séries de Comédia</option>
-        <option value="literatura">Literatura</option>
-        <option value="musica">Música</option>
-        <option value="arte">Arte</option>
-        <option value="tecnologia">Tecnologia</option> 
-        <option value="educacao-infantil">Educação Infantil</option>
-      </select>
-      <button id="closePopoverBtn" class="cancel-btn" type="button">Fechar</button>
-    </div>
-  </div>
+       <!-- AGRUPAMENTO INTERESSES + REDES SOCIAIS -->
+      <div class="interesses-social-row">
+        <div class="interesses">
+          <h5>Interesses</h5>
+          <div class="interesses-pills-wrapper">
+            <span class="interesse-pill">Cinema Autoral<button class="remove-pill" title="Remover interesse" aria-label="Remover interesse">&times;</button></span>
+            <span class="interesse-pill">Música<button class="remove-pill" title="Remover interesse" aria-label="Remover interesse">&times;</button></span>
+            <span class="interesse-pill">Educação Infantil<button class="remove-pill" title="Remover interesse" aria-label="Remover interesse">&times;</button></span>
+            <span class="interesse-pill">Literatura<button class="remove-pill" title="Remover interesse" aria-label="Remover interesse">&times;</button></span>
+            <span class="interesse-pill">Séries de Comédia<button class="remove-pill" title="Remover interesse" aria-label="Remover interesse">&times;</button></span>
+            <button id="addInteresseBtn" class="btn-add-interesse" type="button">+ Interesses</button>
+          </div>
+          <!-- Popover/modal simples para seleção de mais interesses -->
+          <div id="addInteressePopover" class="add-interesse-popover">
+            <select id="interestFilterPopover">
+              <option value="" disabled hidden selected>Adicionar interesse...</option>
+              <option value="hollywood">Cinema Hollywoodiano</option>
+              <option value="cinema-nacional">Cinema Nacional</option>
+              <option value="cinema-autoral">Cinema Autoral</option>
+              <option value="series-drama">Séries de Drama</option>
+              <option value="series-comedia">Séries de Comédia</option>
+              <option value="literatura">Literatura</option>
+              <option value="musica">Música</option>
+              <option value="arte">Arte</option>
+              <option value="tecnologia">Tecnologia</option>
+              <option value="educacao-infantil">Educação Infantil</option>
+            </select>
+            <button id="closePopoverBtn" class="cancel-btn" type="button">Fechar</button>
+          </div>
+        </div>
+
+        <div class="social-links" aria-labelledby="social-links-title">
+          <h5 id="social-links-title">Redes Sociais</h5>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/jesstavares2025/" target="_blank" rel="noopener"
+               class="social-icon-link" aria-label="Instagram (abre em nova aba)">
+              <img src="src/images/insta-img.png" alt="Instagram" class="social-icon-img">
+              <span class="sr-only">Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61580318192944" target="_blank" rel="noopener"
+               class="social-icon-link" aria-label="Facebook (abre em nova aba)">
+              <img src="src/images/facebook-img.png" alt="Facebook" class="social-icon-img">
+              <span class="sr-only">Facebook</span>
+            </a>
+          </div>
+        </div>
+      </div>
 
       <!-- FAVORITOS (CARROSSEL) -->
       <div class="favoritos">
@@ -178,7 +193,7 @@
 
 <!-- SCRIPTS -->
   <script src="src/js/script.js"></script>
-  <script src="src/js/background.js"></script>
+  <script src="src/js/backgroud.js"></script>
   <script src="src/js/meuperfil.js"></script>
   <script src="src/js/tilt-cards.js"></script>
   <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
