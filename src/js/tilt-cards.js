@@ -242,7 +242,6 @@
      // === ADIÇÃO: conteúdo padrão do verso ===
     back.innerHTML = `
     <div class="card-back-inner" aria-hidden="true">
-      <h3 class="card-back-title">Contribuições da Comunidade</h3>
       <img 
         src="src/images/colab-img.png" 
         alt="Ícone de colaboração" 
@@ -250,6 +249,7 @@
         loading="lazy"
         decoding="async"
       >
+      <h3 class="card-back-title">Contribuições da Comunidade</h3>
     </div>
     <div class="card-back-center">
       <p class="card-back-text">
