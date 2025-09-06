@@ -666,11 +666,11 @@ footer {
 }
 
 .card-back-logo {
-  width: 90px !important;
-  height: 90px !important;
+  width: 78px !important;
+  height: 78px !important;
   user-select: none;
   pointer-events: none;
-  margin-top: -15px !important;
+  margin-top: -10px !important;
 }
 
 .card-back-center {
@@ -699,3 +699,4 @@ footer {
 .post.no-tilt .card-front:hover {
   transform: none !important;
 }
+
