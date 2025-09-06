@@ -1,6 +1,6 @@
 /* =========================================================
-   Meus Ecos (meusecos.css) - ADAPTADO AO PADRÃO meuperfil.css
-   Mobile First + Progressive Enhancement
+   Meus Ecos (meusecos.css) - Mobile First + Progressive Enhancement
+   Gradiente slider corrigido para JS dinâmico.
    ========================================================= */
 
 /* ------------------------------
@@ -9,7 +9,6 @@
 :root {
   --font-display: "Space Grotesk", system-ui, sans-serif;
   --font-base: "Work Sans", system-ui, sans-serif;
-
   --fs-xxs: clamp(.55rem, .55rem + .15vw, .9rem);
   --fs-xs: clamp(.65rem, .62rem + .15vw, .7rem);
   --fs-sm: clamp(.75rem, .7rem + .2vw, .8rem);
@@ -17,7 +16,6 @@
   --fs-md: clamp(1rem, .95rem + .4vw, 1.15rem);
   --fs-lg: clamp(1.25rem, 1.1rem + .8vw, 1.7rem);
   --fs-xl: clamp(1.6rem, 1.4rem + 1vw, 2.2rem);
-
   --color-bg-panel: rgba(255,255,255,0.55);
   --color-bg-panel-alt: rgba(255,255,255,0.35);
   --color-bg-blur: 12px;
@@ -32,7 +30,6 @@
   --color-primary-soft: #f3ecff;
   --color-focus: #b2faff;
   --color-danger: #d63d4a;
-
   --grad-primary: linear-gradient(90deg, var(--color-primary), #b2faff);
   --shadow-soft: 0 4px 12px -3px rgba(0,0,0,0.18);
   --shadow-focus: 0 0 0 3px rgba(178,250,255,0.35);
@@ -42,19 +39,11 @@
   --radius-lg: 1rem;
   --btn-radius: 16px;
   --transition-base: .25s cubic-bezier(.55,.1,.3,1);
-
-  --card-color-1: #ffe4d6;
-  --card-color-2: #f9f1ff;
-  --card-color-3: #e8f7ff;
-  --card-color-4: #fff7d9;
-
   --bar-height: 8px;
   --bar-bg: #e1e1e1;
   --bar-fill: var(--grad-primary);
-
   --chip-bg: rgba(0,0,0,0.06);
   --chip-text: #333;
-
   --z-overlay: 50;
   --z-tooltip: 60;
 }
@@ -85,22 +74,7 @@ main > h1, main > h2 {
 }
 
 /* ------------------------------
-   3. Acessibilidade/Foco
-   ------------------------------ */
-:where(button, input, select) {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: 1.1;
-}
-:where(button, a, input, select):focus-visible {
-  outline: 2px solid var(--color-focus);
-  outline-offset: 2px;
-  box-shadow: var(--shadow-focus);
-  border-radius: var(--radius-xs);
-}
-
-/* ------------------------------
-   4. Filtros / Controles
+   3. Filtros / Controles
    ------------------------------ */
 .filtros-wrapper {
   display: flex;
@@ -116,14 +90,12 @@ main > h1, main > h2 {
   padding: 1rem clamp(.9rem, 2vw, 1.35rem);
   border: 1px solid var(--color-border);
 }
-
 .filtros-wrapper > div {
   display: flex;
   flex-direction: column;
   gap: .35rem;
   min-width: 155px;
 }
-
 .filtros-wrapper label {
   font-size: var(--fs-xxs);
   font-weight: 600;
@@ -131,7 +103,6 @@ main > h1, main > h2 {
   text-transform: uppercase;
   color: var(--color-text-soft);
 }
-
 .filtros-wrapper input,
 .filtros-wrapper select {
   padding: .6rem .75rem;
@@ -147,20 +118,127 @@ main > h1, main > h2 {
   box-shadow: 0 0 0 2px var(--color-focus);
 }
 
-/* ==============================
-   Botões padrão perfil CSS
-   ============================== */
-
-.btn-perfil{
-  transform: scale(.9);
+/* Slider de afinidade customizado - CORRIGIDO */
+#afinidade-slider-container input[type="range"] {
+  accent-color: var(--color-primary, #000000);
+  width: 100%;
+  height: 2.2em;
+  background: linear-gradient(90deg, #3a3a42 0%, #e1e1e1 0%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: background .3s;
+}
+#afinidade-slider-container input[type="range"]:focus {
+  outline: none;
+  box-shadow: none;
 }
 
+/* Customização para Webkit (Chrome, Edge, Safari) */
+#afinidade-slider-container input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  background: var(--bar-bg, #e1e1e1);
+  border-radius: 4px;
+  margin: 0;
+}
+#afinidade-slider-container input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-primary, #000000);
+  border: 2px solid #fff;
+  box-shadow: 0 0 2px #0002;
+  cursor: pointer;
+  margin-top: -4px; 
+  transition: background .2s;
+  position: relative;
+}
+#afinidade-slider-container input[type="range"]:focus::-webkit-slider-thumb {
+  background: var(--color-focus, #b2faff);
+}
+#afinidade-slider-container input[type="range"]::-webkit-slider-container {
+  margin: 0;
+  padding: 0;
+}
 
-.eco-card a.btn-perfil,
-#btnLimpar {
+/* Customização para Firefox */
+#afinidade-slider-container input[type="range"]::-moz-range-track {
+  height: 8px;
+  background: var(--bar-bg, #e1e1e1);
+  border-radius: 4px;
+}
+#afinidade-slider-container input[type="range"]::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-primary, #000000);
+  border: 2px solid #fff;
+  box-shadow: 0 0 2px #0002;
+  cursor: pointer;
+  transition: background .2s;
+  position: relative;
+}
+#afinidade-slider-container input[type="range"]:focus::-moz-range-thumb {
+  background: var(--color-focus, #b2faff);
+}
+#afinidade-slider-container input[type="range"]::-moz-focus-outer {
+  border: 0;
+}
+#afinidade-slider-container input[type="range"] {
+  padding: 0;
+  margin: 0;
+}
+
+/* Customização para IE/Edge antigo */
+#afinidade-slider-container input[type="range"]::-ms-fill-lower {
+  background: var(--bar-bg, #e1e1e1);
+  border-radius: 4px;
+}
+#afinidade-slider-container input[type="range"]::-ms-fill-upper {
+  background: var(--bar-bg, #e1e1e1);
+  border-radius: 4px;
+}
+#afinidade-slider-container input[type="range"]::-ms-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-primary, #000000);
+  border: 2px solid #fff;
+  box-shadow: 0 0 2px #0002;
+  cursor: pointer;
+  transition: background .2s;
+  position: relative;
+}
+#afinidade-slider-container input[type="range"]:focus::-ms-thumb {
+  background: var(--color-focus, #b2faff);
+}
+#afinidade-slider-container input[type="range"]::-ms-tooltip {
+  display: none;
+}
+#minAfinidade-value {
+  font-weight: 600;
+  font-size: 1em;
+  color: var(--color-primary-accent, #000);
+  letter-spacing: -1px;
+}
+body.theme-dark #minAfinidade-value {
+  color: #fff;
+}
+#afinidade-slider-container {
+  margin-top: 0.18em;
+  margin-bottom: 0.05em;
+}
+
+/* ------------------------------
+   4. Botões e Ordenação
+   ------------------------------ */
+.btn-perfil, #btnLimpar {
   background: linear-gradient(90deg,#0000003a 0%,#ffffff59 100%);
   color: #191919;
-  font-family: 'Space Grotesk', Arial, sans-serif;
+  font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 700;
   border: none;
@@ -168,46 +246,25 @@ main > h1, main > h2 {
   box-shadow: 0 1.5px 7px #0001;
   padding: .55rem 1.5rem;
   letter-spacing: .03em;
-  text-shadow: 0 1px 3px rgba(255,255,255,0.22), 0 .5px 1px rgba(0,0,0,0.11);
   display: inline-flex;
   align-items: center;
   gap: .5em;
   cursor: pointer;
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
   transition: background .28s, color .18s, box-shadow .28s, transform .18s;
   text-decoration: none;
 }
-.eco-card a.btn-perfil::before,
-#btnLimpar::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg,rgba(255,255,255,.18),rgba(255,255,255,0));
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .22s;
-}
-.eco-card a.btn-perfil:hover,
-#btnLimpar:hover {
+.btn-perfil:hover, #btnLimpar:hover {
   background: linear-gradient(90deg, #b2faff77 0%, #fff 100%);
   color: #000;
   box-shadow: 0 2.5px 13px #b2faff44;
   transform: translateY(-1.5px) scale(1.04);
 }
-.eco-card a.btn-perfil:hover::before,
-#btnLimpar:hover::before {
-  opacity: .6;
-}
-.eco-card a.btn-perfil:active,
-#btnLimpar:active {
+.btn-perfil:active, #btnLimpar:active {
   background: linear-gradient(90deg, #19191922 0%, #fff 100%);
   transform: translateY(0) scale(.98);
   box-shadow: 0 2px 7px #0001;
 }
 
-/* Botões de ordenação no padrão perfil */
 .opcoes-ordenacao {
   display: flex;
   flex-wrap: wrap;
@@ -217,7 +274,7 @@ main > h1, main > h2 {
 .opcoes-ordenacao button {
   background: transparent;
   color: #ffffff89;
-  font-family: 'Space Grotesk', Arial, sans-serif;
+  font-family: var(--font-display);
   font-size: .96rem;
   font-weight: 600;
   border: none;
@@ -237,30 +294,9 @@ main > h1, main > h2 {
   border-radius: var(--btn-radius);
   box-shadow: 0 2px 13px #b2faff44;
 }
-.opcoes-ordenacao button.ativo:hover {
-  background: linear-gradient(90deg,#b2faff6e 0%,#fff 100%);
-}
-
-/* Botão ghost secundário */
-.btn-ghost {
-  background: transparent;
-  color: #19191999;
-  font-family: 'Space Grotesk', Arial, sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  border: none;
-  border-radius: 14px;
-  padding: .49rem 1.01rem;
-  box-shadow: none;
-  transition: background .17s, color .17s, box-shadow .19s;
-}
-.btn-ghost:hover {
-  background: #b2faff25;
-  color: #000;
-}
 
 /* ------------------------------
-   6. Grid de Cards (Responsivo)
+   5. Grid de Cards (Responsivo)
    ------------------------------ */
 .grid-cards {
   display: flex;
@@ -284,22 +320,8 @@ main > h1, main > h2 {
   .grid-cards { grid-template-columns: repeat(4, minmax(0,1fr)); }
 }
 
-/* Estado vazio */
-.estado-vazio {
-  text-align: center;
-  font-size: var(--fs-sm);
-  opacity: .7;
-  padding: 2rem 1rem;
-  background: var(--color-bg-panel-alt);
-  border: 1px dashed var(--color-border);
-  border-radius: var(--radius-md);
-  backdrop-filter: blur(var(--color-bg-blur));
-  -webkit-backdrop-filter: blur(var(--color-bg-blur));
-  animation: fadeIn .5s ease;
-}
-
 /* ------------------------------
-   7. Card
+   6. Card
    ------------------------------ */
 .eco-card {
   --pad-x: 1rem;
@@ -312,38 +334,19 @@ main > h1, main > h2 {
   border: 1px solid var(--color-border);
   border-radius: 18px;
   padding: var(--pad-y) var(--pad-x) calc(var(--pad-y) + .25rem);
-  backdrop-filter: blur(6px) saturate(1.2);
-  -webkit-backdrop-filter: blur(8px) saturate(1.2);
   min-height: 255px;
-  isolation: isolate;
-  overflow: hidden;
-  animation: fadeIn .55s ease;
-  transition: var(--transition-base);
   box-shadow: 0 8px 32px 12px rgba(0,0,0,0.40);
   border-left: 6px solid rgba(255,255,255,0.32);
   border-right: 6px solid rgba(200,220,255,0.12);
   background: rgba(255, 255, 255, 0.25);
-}
-.eco-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 85% 15%, rgba(255,255,255,0.55), transparent 60%),
-    linear-gradient(145deg, rgba(255,255,255,0.25), rgba(255,255,255,0));
-  mix-blend-mode: soft-light;
-  opacity: .9;
-  pointer-events: none;
-  border-radius: 18px;
+  transition: var(--transition-base);
+  isolation: isolate;
+  overflow: hidden;
+  animation: fadeIn .55s ease;
 }
 .eco-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 20px -10px rgba(0,0,0,0.35);
-  border-radius: 18px;
-}
-.eco-card:focus-within {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
 }
 .eco-card .card-header {
   display: flex;
@@ -383,7 +386,6 @@ main > h1, main > h2 {
 .tag-linha.ocupacao{
   font-weight: 500 !important;
 }
-
 
 /* Interesses (chips) */
 .chips {
@@ -450,7 +452,7 @@ main > h1, main > h2 {
   gap: .75rem;
 }
 
-/* Textos de seção do card */
+/* Card Section Text */
 .secao-interesses,
 .secao-posts {
   font-size: var(--fs-xxs);
@@ -461,8 +463,6 @@ main > h1, main > h2 {
   position: relative;
 }
 .secao-posts { margin-top: -.25rem; }
-
-/* Rodapé do card */
 .eco-card footer {
   margin-top: auto;
   display: flex;
@@ -471,7 +471,7 @@ main > h1, main > h2 {
 }
 
 /* ------------------------------
-   8. Estados / Utilidades
+   7. Estados / Utilidades
    ------------------------------ */
 .is-loading .grid-cards {
   opacity: .4;
@@ -480,8 +480,6 @@ main > h1, main > h2 {
   user-select: none;
   transition: var(--transition-base);
 }
-
-/* Mensagem de erro */
 .msg-erro {
   background: #ffe8e8;
   border: 1px solid var(--color-danger);
@@ -493,7 +491,7 @@ main > h1, main > h2 {
 }
 
 /* ------------------------------
-   9. Animações
+   8. Animações
    ------------------------------ */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(6px); }
@@ -504,7 +502,7 @@ main > h1, main > h2 {
 }
 
 /* ------------------------------
-   10. Dark Mode
+   9. Dark Mode
    ------------------------------ */
 body.theme-dark {
   --color-bg-panel: rgba(30,30,37,0.7);
@@ -513,7 +511,7 @@ body.theme-dark {
   --color-border-strong: rgba(255,255,255,0.3);
   --color-text: #191919;
   --color-text-dim: #191919;
-  --color-text-soft: #191919;;
+  --color-text-soft: #191919;
   --chip-bg: rgba(255,255,255,0.08);
   --chip-text: #f5f5f7;
   --bar-bg: #3a3a42;
@@ -558,175 +556,8 @@ body.theme-dark .estado-vazio {
 }
 
 /* ------------------------------
-   11. Ajustes responsivos
+   10. Responsivo
    ------------------------------ */
-@media (min-width: 600px) {
-  .filtros-wrapper { gap: 1.1rem 1.25rem;}
-}
-@media (min-width: 1000px) {
-  .filtros-wrapper { padding: 1.1rem 1.5rem; }
-  .eco-card { --pad-x: 1.15rem; --pad-y: 1.15rem; }
-}
-@media (min-width: 1400px) {
-  main { max-width: 1400px; }
-  .grid-cards { column-gap: 1.5rem; row-gap: 1.4rem; }
-}
-
-/* ------------------------------
-   12. Impressão
-   ------------------------------ */
-@media print {
-  .filtros-wrapper, .opcoes-ordenacao, .btn-perfil, #btnLimpar { display: none !important; }
-  .eco-card { box-shadow: none; background: #fff !important; }
-  main { padding: 0; }
-}
-
-
-
-
-/* Slider de afinidade customizado */
-#afinidade-slider-container input[type="range"] {
-  accent-color: var(--color-primary, #000000);
-  width: 100%;
-  height: 2.2em;
-  background: transparent;
-  margin: 0;
-  padding: 0;
-  /* Remove qualquer gap lateral nos browsers que suportam */
-  box-sizing: border-box;
-}
-
-#afinidade-slider-container input[type="range"]:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-/* ---------- Customização para Webkit (Chrome, Edge, Safari) ---------- */
-#afinidade-slider-container input[type="range"]::-webkit-slider-runnable-track {
-  height: 8px;
-  background: var(--bar-bg, #e1e1e1);
-  border-radius: 4px;
-  margin: 0;
-}
-#afinidade-slider-container input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: var(--color-primary, #000000);
-  border: 2px solid #fff;
-  box-shadow: 0 0 2px #0002;
-  cursor: pointer;
-  margin-top: -4px; 
-  transition: background .2s;
-  position: relative;
-}
-#afinidade-slider-container input[type="range"]:focus::-webkit-slider-thumb {
-  background: var(--color-focus, #b2faff);
-}
-
-/* O segredo: REMOVER padding/offset padrão dos browsers */
-#afinidade-slider-container input[type="range"]::-webkit-slider-container {
-  margin: 0;
-  padding: 0;
-}
-
-#afinidade-slider-container {
-  margin-top: 0.18em;
-  margin-bottom: 0.05em;
-}
-
-#minAfinidade-value {
-  font-weight: 600;
-  font-size: 1em;
-  color: var(--color-primary-accent, #000);
-  letter-spacing: -1px;
-}
-
-body.theme-dark #minAfinidade-value {
-  color: #fff;
-}
-
-/* ---------- Customização para Firefox ---------- */
-#afinidade-slider-container input[type="range"]::-moz-range-track {
-  height: 8px;
-  background: var(--bar-bg, #e1e1e1);
-  border-radius: 4px;
-}
-#afinidade-slider-container input[type="range"]::-moz-range-thumb {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: var(--color-primary, #000000);
-  border: 2px solid #fff;
-  box-shadow: 0 0 2px #0002;
-  cursor: pointer;
-  transition: background .2s;
-  position: relative;
-}
-#afinidade-slider-container input[type="range"]:focus::-moz-range-thumb {
-  background: var(--color-focus, #b2faff);
-}
-#afinidade-slider-container input[type="range"]::-moz-focus-outer {
-  border: 0;
-}
-
-/* Remove padding padrão do Firefox */
-#afinidade-slider-container input[type="range"] {
-  padding: 0;
-  margin: 0;
-}
-
-/* ---------- Customização para IE/Edge antigo ---------- */
-#afinidade-slider-container input[type="range"]::-ms-fill-lower {
-  background: var(--bar-bg, #e1e1e1);
-  border-radius: 4px;
-}
-#afinidade-slider-container input[type="range"]::-ms-fill-upper {
-  background: var(--bar-bg, #e1e1e1);
-  border-radius: 4px;
-}
-#afinidade-slider-container input[type="range"]::-ms-thumb {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: var(--color-primary, #000000);
-  border: 2px solid #fff;
-  box-shadow: 0 0 2px #0002;
-  cursor: pointer;
-  transition: background .2s;
-  position: relative;
-}
-#afinidade-slider-container input[type="range"]:focus::-ms-thumb {
-  background: var(--color-focus, #b2faff);
-}
-#afinidade-slider-container input[type="range"]::-ms-tooltip {
-  display: none;
-}
-
-#afinidade-slider-container input[type="range"] {
-  /* Remove padding/margem para IE/Edge */
-  padding: 0;
-  margin: 0;
-}
-
-/* Para garantir, zere o gap lateral do input */
-#afinidade-slider-container input[type="range"] {
-  background: transparent;
-  border: none;
-  outline: none;
-  box-shadow: none;
-  margin: 0;
-}
-
-/* Opcional: dark mode */
-body.theme-dark #afinidade-slider-container input[type="range"] {
-  accent-color: #b2faff;
-}
-
-
-
 @media (max-width: 600px) {
   .filtros-wrapper {
     width: fit-content;
@@ -738,7 +569,6 @@ body.theme-dark #afinidade-slider-container input[type="range"] {
     align-items: flex-start;
     row-gap: 0.6rem;
     column-gap: 0.6rem;
-    /* opcional: padding mais compacto */
     padding: 0.7em 0.8em;
   }
   .filtros-wrapper > div {
@@ -755,4 +585,13 @@ body.theme-dark #afinidade-slider-container input[type="range"] {
     max-width: 220px;
     box-sizing: border-box;
   }
+}
+
+/* ------------------------------
+   11. Impressão
+   ------------------------------ */
+@media print {
+  .filtros-wrapper, .opcoes-ordenacao, .btn-perfil, #btnLimpar { display: none !important; }
+  .eco-card { box-shadow: none; background: #fff !important; }
+  main { padding: 0; }
 }
