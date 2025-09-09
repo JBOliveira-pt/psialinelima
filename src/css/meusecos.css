@@ -338,7 +338,7 @@ body.theme-dark #minAfinidade-value {
   box-shadow: 0 8px 32px 12px rgba(0,0,0,0.40);
   border-left: 6px solid rgba(255,255,255,0.32);
   border-right: 6px solid rgba(200,220,255,0.12);
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.521); 
   transition: var(--transition-base);
   isolation: isolate;
   overflow: hidden;
@@ -468,6 +468,7 @@ body.theme-dark #minAfinidade-value {
   display: flex;
   justify-content: flex-end;
   padding-top: .15rem;
+  text-shadow: none !important; 
 }
 
 /* ------------------------------
