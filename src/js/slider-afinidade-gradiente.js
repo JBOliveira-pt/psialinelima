@@ -28,4 +28,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   slider.addEventListener('input', atualizarTrack);
   atualizarTrack();
+
+// Botão limpar apaga o gradiente
+  document.getElementById('btnLimpar').addEventListener('click', () => {
+    slider.value = slider.min; 
+    styleEl.textContent = `
+      #afinidade-slider-container input[type="range"]::-webkit-slider-runnable-track {
+        background: #e1e1e1;
+      }
+    `;
+    document.getElementById('minAfinidade-value').textContent = slider.value + '%';
+  });
+  
 });
