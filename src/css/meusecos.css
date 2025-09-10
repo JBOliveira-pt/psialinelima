@@ -586,6 +586,15 @@ body.theme-dark .estado-vazio {
     max-width: 220px;
     box-sizing: border-box;
   }
+  #btnLimpar {                                                
+    padding: .55rem 3.5rem;
+  }
+  .eco-card .info {                                          
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100% !important;
+  }
 }
 
 /* ------------------------------
