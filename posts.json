@@ -1,5 +1,94 @@
 [
   {
+  "titulo": "O caleidoscópio do eu",
+  "data": "04/09/2025",
+  "imagem": "src/images/maya-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "Minha filha, em sua inocência que tudo cataloga, insiste em me perguntar qual é minha cor, meu sabor, minha música preferida.",
+    "O que para ela é uma curiosidade simples, para mim se transforma num complicado dilema, pois sinto que ao eleger um único elemento para representar o todo, traio uma constelação de outros amores igualmente legítimos.",
+    "Essa dificuldade não é mera indecisão; é a manifestação de que o “eu” que ela interroga não é uma unidade sólida, mas um campo de batalha e negociação entre inúmeras “Alines” que coexistem, cada uma com suas próprias predileções.",
+    "Somos um caleidoscópio de identificações, uma combinação de vozes internalizadas de pais, amigos, amores e até de personagens que nos marcaram.",
+    "O que chamo de “meu gosto” é, na verdade, o resultado complexo dessas diversas instâncias psíquicas.",
+    "O “eu” que responde hoje pode não ser o mesmo de ontem, pois estamos em constante devir, moldados por desejos conscientes e por forças do inconsciente que jamais conseguiremos nomear por completo.",
+    "Assim, minha dificuldade em responder é um testemunho de que, mais do que um conjunto de certezas, somos também feitos de faltas e contradições.",
+    "Explico à minha filha, da melhor forma que posso, que meu amor pelo azul não apaga meu fascínio pelo vermelho, assim como uma lembrança triste não invalida uma feliz. E que se num dia estou odiando alguém, amanhã posso estar amando e vice-versa.",
+    "Talvez, ao não oferecer uma única resposta, eu não esteja me furtando à pergunta, mas sim oferecendo a ela algo maior: o direito de poder habitar com orgulho todas as suas versões, sem a tirania de ter que escolher a “melhor” ou apenas uma…"
+  ],
+  "hashtags": [
+    "identidade",
+    "autoconhecimento",
+    "contradicoes",
+    "inconsciente",
+    "familia",
+    "infancia",
+    "reflexao",
+    "autenticidade",
+    "constelacoes",
+    "devir"
+  ]
+},
+  {
+  "titulo": "O fascínio infantil por Wandinha",
+  "data": "03/09/2025",
+  "imagem": "src/images/wandinha-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "Desde que a série da Netflix estreou, “Wandinha” virou febre entre as crianças: está nas fantasias de Carnaval, nas festas de aniversário e até nas dancinhas do TikTok.",
+    "Mas aí vem a dúvida de muitos pais: como uma personagem gótica, sombria e de uma série com classificação para 16 anos conquistou tanto os pequenos?",
+    "Segundo especialistas, a resposta está na autenticidade. Wandinha não tenta se encaixar, não finge ser simpática. Ela é quem é — e justamente por isso encanta.",
+    "Para muitas crianças, isso soa como uma permissão para também serem fiéis a si mesmas, sem precisar caber em moldes “perfeitos”.",
+    "👉 No carrossel, a gente explica melhor esse fenômeno e como ele pode ser visto como uma oportunidade de conversa com os filhos.",
+    "Ah, e se quiser ler a reportagem completa, é só acessar crescer.globo.com! O link está na bio, em “Últimas Notícias”.",
+    "...",
+    "Post em parceria com a @revistacrescer, matéria publicada na edição de setembro/2025 da revista."
+  ],
+  "hashtags": [
+    "revistacrescer",
+    "wandinha",
+    "netflix",
+    "infancia",
+    "autenticidade",
+    "paisefilhos",
+    "cultura",
+    "tiktok",
+    "carnaval",
+    "serie",
+    "reflexao"
+  ]
+},
+  {
+  "titulo": "Metamorfose do sintoma",
+  "data": "03/09/2025",
+  "imagem": "src/images/metamorfose-img.png",
+  "video": "",
+  "poster": "",
+  "conteudo": [
+    "É tentador ver o sintoma apenas como um inimigo. Afinal, ele dói, atrapalha e nos faz “falhar”.",
+    "Mas e se, em vez de só lutarmos contra ele, começássemos a escutá-lo?",
+    "E se, ao falarmos sobre as noites de dificuldade para dormir, a insônia recorrente fosse perdendo seus ares de distúrbio para ganhar ares de rebeldia?",
+    "E se, depois de um dia inteiro performando, produzindo e atendendo às expectativas do mundo, alguém se escutasse dizendo que é somente de madrugada que pode fazer o que gosta e ser verdadeiramente sujeito?",
+    "Claro que, de um ponto de vista estritamente funcional, se trata de uma resistência dolorosa e incapacitante. Mas simbolicamente, também é vida.",
+    "O mesmo pode valer para procrastinar, perder o foco, sentir dores inexplicáveis ... E se todas essas ações fossem a parte de nós que se recusa a ser completamente instrumentalizada?",
+    "Não se trata de romantizar o sofrimento, mas de entender que ele é, por vezes, o último recurso que nossa psique encontra para não nos aniquilarmos por completo.",
+    "Um sintoma incomoda muita gente. Mas, às vezes, dentro de uma sociedade que adoece, ele é o preço que pagamos para nos sentirmos um pouquinho vivos…"
+  ],
+  "hashtags": [
+    "sintoma",
+    "rebeldia",
+    "procrastinacao",
+    "insonia",
+    "dor",
+    "resistencia",
+    "metamorfose",
+    "psique",
+    "vida",
+    "reflexao"
+  ]
+},
+  {
   "titulo": "Amor, confiança e descuido",
   "data": "22/08/2025",
   "imagem": "",
@@ -2243,4 +2332,5 @@
     ]
   }
 ]
+
 
