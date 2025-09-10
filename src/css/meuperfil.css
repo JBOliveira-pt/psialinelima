@@ -355,8 +355,8 @@
 /* 7. HAMBURGER FIX */
 .hamburger {
   position: fixed !important;
-  top: calc(env(safe-area-inset-top, 0px) + 40px) !important;
-  left: 40px !important;
+  top: 55px !important;
+  left: 62px !important;
   z-index: 400 !important;
 }
 @media (max-width:600px) {
