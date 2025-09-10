@@ -361,8 +361,8 @@
 }
 @media (max-width:600px) {
   .hamburger {
-    top: calc(env(safe-area-inset-top, 0px) + 32px) !important;
-    left: 28px !important;
+    top: 38px !important; 
+    left: 34px !important;
   }
 }
 
