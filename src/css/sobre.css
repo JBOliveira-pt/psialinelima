@@ -28,7 +28,7 @@
     background-blend-mode: lighten;
     border-radius: 15px;
     box-shadow: 0 0 15px 20px rgba(7, 10, 10, 0.911);
-    gap: 100px;
+    gap: 50px;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -104,6 +104,7 @@
   }
 
 }
+
 
 
 
