@@ -4,7 +4,7 @@
   box-sizing: border-box;}
 @font-face {
   font-family: 'MinhaFonte';
-  src: url('../fonts/Creattion.ttf') format('truetype');
+  src: url('../fonts/TexGyreAdventor.otf') format('truetype');
   font-weight: normal;
   font-style: normal;}
 header, main, footer {
@@ -699,4 +699,5 @@ footer {
 .post.no-tilt .card-front:hover {
   transform: none !important;
 }
+
 
