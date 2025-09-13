@@ -89,7 +89,7 @@ header {
   text-shadow: 0 1px 3px rgba(255, 255, 255, 0.492), 0 0.5px 1px rgba(0, 0, 0, 0.382);}
 header h1 {
   font-family: 'MinhaFonte';
-  font-size: 4em;
+  font-size: 3.5em;
   margin-bottom: 0px;
   font-weight: 550;
   color: #fff;
@@ -699,5 +699,6 @@ footer {
 .post.no-tilt .card-front:hover {
   transform: none !important;
 }
+
 
 
