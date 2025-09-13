@@ -48,7 +48,8 @@
     margin-bottom: 20px !important;}
   header{
     margin-right: 10px;
-    font-size:70%;}
+    margin-top: 13px;
+    font-size:45%;}
   .post, .post.tilt-card {
     max-width: 100% !important;
     box-sizing: border-box;
@@ -81,4 +82,5 @@
     gap: 12px;
     margin-left: 40px;}
 }
+
 
