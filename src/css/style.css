@@ -97,12 +97,6 @@ header h1 {
     0 2px 12px rgba(0,0,0,0.40),      
     0 0 5px #000404,                  
     0 0 5px #fff;}
-header small{
-  font-size: 1rem;
-  font-weight: 800;}
-.small-two{
-  font-size: 2.7rem;
-  font-weight: 550;}
 
 /* HEADER - HAMBURGER BUTTON */
 .hamburger {
@@ -699,6 +693,7 @@ footer {
 .post.no-tilt .card-front:hover {
   transform: none !important;
 }
+
 
 
 
